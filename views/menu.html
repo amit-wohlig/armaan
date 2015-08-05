@@ -1,5 +1,9 @@
-<ul class="nav navbar-nav">
-    <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-        <a href="{{menu.link}}">{{menu.name}}</a>
-    </li>
-</ul>
+<div class="menus">
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li ng-repeat="menu in navigation" class="{{menu.classis}}">
+                <a href="{{menu.link}}">{{menu.name}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
