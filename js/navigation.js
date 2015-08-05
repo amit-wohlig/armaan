@@ -7,9 +7,9 @@ var navigationservice = angular.module('navigationservice', [])
             link: "#/aboutus",
             subnav: []
     }, {
-            name: "PRODUCTS",
+            name: "PRODUCT",
             active: "",
-            link: "#/products",
+            link: "#/product",
             classis: "",
             subnav: []
     },
