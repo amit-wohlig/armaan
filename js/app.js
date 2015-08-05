@@ -16,25 +16,42 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
 
     $stateProvider
 
-    .state('home', {
+    .state('aboutus', {
         url: "/home",
         templateUrl: "views/template.html",
-        controller: 'HomeCtrl'
+        controller: 'AboutusCtrl'
     })
 
-    .state('feature', {
-        url: "/feature",
+    .state('availableat', {
+        url: "/availableat",
         templateUrl: "views/template.html",
-        controller: 'FeatureCtrl'
+        controller: 'AvailableatCtrl'
     })
 
-    .state('infinite', {
-        url: "/infinite",
+    .state('contact', {
+        url: "/contact",
         templateUrl: "views/template.html",
-        controller: 'InfiniteCtrl'
+        controller: 'ContactCtrl'
+    })
+    
+    .state('feedback', {
+        url: "/feedback",
+        templateUrl: "views/template.html",
+        controller: 'FeedbackCtrl'
+    })
+    
+    .state('media', {
+        url: "/media",
+        templateUrl: "views/template.html",
+        controller: 'MediaCtrl'
+    }) 
+        .state('product', {
+        url: "/product",
+        templateUrl: "views/template.html",
+        controller: 'ProductCtrl'
     })
 
-    $urlRouterProvider.otherwise("/home");
+    $urlRouterProvider.otherwise("/aboutus");
 
 });
 

@@ -1,30 +1,52 @@
 var navigationservice = angular.module('navigationservice', [])
 
-.factory('NavigationService', function() {
+.factory('NavigationService', function () {
     var navigation = [{
-        name: "Home",
-        classis: "active",
-        link: "#/home",
-        subnav: []
+            name: "Aboutus",
+            classis: "active",
+            link: "#/aboutus",
+            subnav: []
     }, {
-        name: "Features",
-        active: "",
-        link: "#/feature",
-        classis: "active",
-        subnav: []
-    }, {
-        name: "Infinite Scroll",
-        active: "",
-        link: "#/infinite",
-        classis: "active",
-        subnav: []
-    }];
+            name: "Products",
+            active: "",
+            link: "#/products",
+            classis: "",
+            subnav: []
+    },
+        {
+            name: "Media",
+            active: "",
+            link: "#/media",
+            classis: "",
+            subnav: []
+    },
+        {
+            name: "Available At",
+            active: "",
+            link: "#/availableat",
+            classis: "",
+            subnav: []
+    },
+        {
+            name: "Contact",
+            active: "",
+            link: "#/contact",
+            classis: "",
+            subnav: []
+    },
+        {
+            name: "Feedback",
+            active: "",
+            link: "#/feedback",
+            classis: "",
+            subnav: []
+    }, ];
 
     return {
-        getnav: function() {
+        getnav: function () {
             return navigation;
         },
-        makeactive: function(menuname) {
+        makeactive: function (menuname) {
             for (var i = 0; i < navigation.length; i++) {
                 if (navigation[i].name == menuname) {
                     navigation[i].classis = "active";
