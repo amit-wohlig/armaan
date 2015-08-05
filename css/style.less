@@ -1,15 +1,15 @@
 @import "../bower_components/lesshat/build/lesshat.less";
-//
-//prod font: #f58d65
-//menu backcolor: #231f20
-//menu select: #f2663a
-//prod menuback: #d2ac67
-//product range: #f8f2e6
-//prod menu active: #231f20
+
+@fonts: #f58d65;
+@menubg: #231f20;
+@menuselect: #f2663a;
+@sidemenu: #d2ac67;
+@productrange: #f8f2e6;
+@active: #231f20;
 
 //header
 .header {
-    background: url('header_texture.jpg');
+    background: url('../img/header_texture.jpg');
     img {
         width: 100%;
     }
@@ -22,6 +22,10 @@
         .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
             color: #fff;
             background-color: #000;
+        }
+        ul.nav.nav-pills.nav-justified {
+            padding-left: 13%;
+            padding-right: 13%;
         }
         .nav>li>a:hover {
             text-decoration: none;
@@ -41,4 +45,10 @@
             }
         }
     }
+}
+
+//About Us
+.aboutus {
+    background: url('../img/aboutbg.jpg') no-repeat;
+        background-size: 100%;
 }
