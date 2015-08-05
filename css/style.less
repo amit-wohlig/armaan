@@ -1,26 +1,27 @@
 @import "../bower_components/lesshat/build/lesshat.less";
-
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900|Open+Sans:400,300,600,700,800);
 @fonts: #f58d65;
 @menubg: #231f20;
 @menuselect: #f2663a;
 @sidemenu: #d2ac67;
 @productrange: #f8f2e6;
 @active: #231f20;
-
 //header
 .header {
-    background: url('header_texture.jpg');
+    background: url('../img/header_texture.jpg');
+    padding-top: 10px;
+    padding-bottom: 10px;
     img {
         width: 100%;
     }
 }
 
 //footer
-footer {
-    border-top: 1px solid #000;
+.footers {
+    border-top: 2px solid #606062;
     padding: 1% 0;
     background-color: rgba(255, 255, 255, .7);
-    color: #000;
+    color: @active;
     font-weight: 700;
     letter-spacing: 2px;
     word-spacing: 5px;
@@ -28,15 +29,36 @@ footer {
 
 //Menu
 .menus {
-    background: black;
+    background: @active;
+    margin-bottom: 4%;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 14px;
     div {
-        .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-            color: #fff;
-            background-color: #000;
+        padding-left: 8%;
+        padding-right: 8%;
+        ul {
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .nav-pills>li.active>a,
+        .nav-pills>li.active>a:focus,
+        .nav-pills>li.active>a:hover {
+            color: @menuselect;
+            background-color: @active;
         }
         .nav>li>a:hover {
             text-decoration: none;
-            background-color: #000;
+            background-color: @active;
+            color: @menuselect;
+        }
+        .nav>li>a:focus,
+        .nav>li>a:hover {
+            text-decoration: none;
+            background-color: @active;
         }
     }
 }
@@ -54,13 +76,24 @@ footer {
     }
 }
 
-
 //About Us
 .aboutus {
     background: url('../img/aboutbg.jpg') no-repeat;
     background-size: 100%;
+    height: 365px;
+    overflow: hidden;
+    margin-bottom: 3%;
     h2 {
         color: @fonts;
+    }
+    p{ 
+        overflow: scroll;
+    }
+    .dish {
+        img {
+            height: auto;
+            width: 310px;
+        }
     }
 }
 
@@ -74,6 +107,7 @@ footer {
     letter-spacing: 2px;
     word-spacing: 5px;
 }
+
 //feedback page
 .feed {
     background: url('../img/feedback_bg.jpg') no-repeat;
