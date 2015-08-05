@@ -35,6 +35,12 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
+    .controller('FeedbackCtrl', function($scope, TemplateService, NavigationService) {
+    $scope.template = TemplateService.changecontent("feedback");
+    $scope.menutitle = NavigationService.makeactive("FEEDBACK");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+})
 
 .controller('headerctrl', function($scope, TemplateService) {
     $scope.template = TemplateService;
