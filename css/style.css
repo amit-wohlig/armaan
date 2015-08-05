@@ -29,3 +29,15 @@
   background: url('../img/aboutbg.jpg') no-repeat;
   background-size: 100%;
 }
+.aboutus h2 {
+  color: #f58d65;
+}
+footer {
+  border-top: 1px solid #000;
+  padding: 1% 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
