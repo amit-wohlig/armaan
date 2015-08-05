@@ -17,7 +17,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
     $stateProvider
 
     .state('aboutus', {
-        url: "/home",
+        url: "/aboutus",
         templateUrl: "views/template.html",
         controller: 'AboutusCtrl'
     })

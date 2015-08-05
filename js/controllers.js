@@ -3,7 +3,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('AboutusCtrl', function($scope, TemplateService, NavigationService, cfpLoadingBar, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("aboutus");
-    $scope.menutitle = NavigationService.makeactive("Aboutus");
+    $scope.menutitle = NavigationService.makeactive("About Us");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
