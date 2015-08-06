@@ -17,6 +17,9 @@
   letter-spacing: 2px;
   word-spacing: 5px;
 }
+.footers p {
+  margin: 0;
+}
 .menus {
   background: #231f20;
   margin-bottom: 4%;
@@ -47,8 +50,47 @@
   text-decoration: none;
   background-color: #231f20;
 }
+.products {
+  margin-left: 3%;
+}
+.products .container .prod .prodarray {
+  color: #FF6633;
+  text-align: center;
+}
 .products .container .prod .prodarray img {
   width: 100%;
+}
+.products .container .prod .prodarray h3 {
+  font-size: 17px;
+}
+.products .container .prod .prodarray h4 {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+.product-list {
+  min-height: 611px;
+  background-color: #D2AE6D;
+}
+.product-list h2 {
+  padding: 18px;
+  border-bottom: 1px solid #fff;
+  margin: 0;
+  color: #fff;
+  font-size: 10pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.product-list ul {
+  padding: 0 16px;
+  font-size: 10pt;
+}
+.product-list ul li {
+  padding: 18px;
+  border-bottom: 1px solid #fff;
+  list-style-type: none;
+}
+ul li:hover {
+  font-weight: bold;
 }
 .aboutus {
   background: url('http://localhost/armaan/img/aboutbg.jpg') no-repeat;

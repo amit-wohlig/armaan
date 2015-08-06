@@ -27,6 +27,9 @@
     font-weight: 700;
     letter-spacing: 2px;
     word-spacing: 5px;
+    p {
+        margin: 0;
+    }
 }
 
 //Menu
@@ -67,14 +70,53 @@
 
 //Products
 .products {
+    margin-left: 3%;
     .container {
         .prod {
             .prodarray {
+                color: #FF6633;
+                text-align: center;
                 img {
                     width: 100%;
                 }
+                h3 {
+                    font-size: 17px;
+                }
+                h4 {
+                    margin-bottom: 20px;
+                    font-size: 17px;
+                }
             }
         }
+    }
+}
+
+.product-list {
+    min-height: 611px;
+    background-color: #D2AE6D;
+    h2 {
+        padding: 18px;
+        border-bottom: 1px solid #fff;
+        margin: 0;
+        color: #fff;
+        font-size: 10pt;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    ul {
+        padding: 0 16px;
+        font-size: 10pt;
+        li {
+            padding: 18px;
+            border-bottom: 1px solid #fff;
+            list-style-type: none;
+        }
+    }
+}
+
+ul {
+    li:hover {
+        font-weight: bold;
     }
 }
 
