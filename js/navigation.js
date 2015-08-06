@@ -8,35 +8,35 @@ var navigationservice = angular.module('navigationservice', [])
             subnav: []
     }, {
             name: "PRODUCT",
-            active: "",
+            active: "active",
             link: "#/product",
             classis: "",
             subnav: []
     },
         {
             name: "MEDIA",
-            active: "",
+            active: "active",
             link: "#/media",
             classis: "",
             subnav: []
     },
         {
             name: "AVAILABLE AT",
-            active: "",
+            active: "active",
             link: "#/availableat",
             classis: "",
             subnav: []
     },
         {
             name: "CONTACT",
-            active: "",
+            active: "active",
             link: "#/contact",
             classis: "",
             subnav: []
     },
         {
             name: "FEEDBACK",
-            active: "",
+            active: "active",
             link: "#/feedback",
             classis: "",
             subnav: []

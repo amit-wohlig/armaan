@@ -8,6 +8,16 @@
 @active: #231f20;
 @fonthead: 'Open Sans';
 @fontdata: 'Lato';
+@fontproduct: 14px;
+a:hover {
+    text-decoration: none;
+}
+
+//body
+body {
+    background: url('../img/body_bg.jpg');
+}
+
 //header
 .header {
     background: url('../img/header_texture.jpg');
@@ -78,13 +88,17 @@
                 text-align: center;
                 img {
                     width: 100%;
+                    border: 3px solid #E6E7E8;
                 }
-                h3 {
-                    font-size: 17px;
-                }
-                h4 {
-                    margin-bottom: 20px;
-                    font-size: 17px;
+                .img-descp {
+                    margin-bottom: 14px;
+                    font-size: @fontproduct;
+                    h3 {
+                        padding-top: 12px;
+                        border-top: 1px solid #D2D3D5;
+                        margin: 14px 0 0 0;
+                        font-size: @fontproduct;
+                    }
                 }
             }
         }
@@ -92,10 +106,10 @@
 }
 
 .product-list {
-    min-height: 611px;
+    min-height: 600px;
     background-color: #D2AE6D;
     h2 {
-        padding: 18px;
+        padding: 22px 18px 18px;
         border-bottom: 1px solid #fff;
         margin: 0;
         color: #fff;
@@ -110,14 +124,15 @@
             padding: 18px;
             border-bottom: 1px solid #fff;
             list-style-type: none;
+            a {
+                color: #000;
+            }
         }
     }
 }
 
-ul {
-    li:hover {
-        font-weight: bold;
-    }
+ul li a:hover {
+    font-weight: bold;
 }
 
 //About Us
