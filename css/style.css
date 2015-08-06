@@ -51,30 +51,48 @@
   width: 100%;
 }
 .aboutus {
-  background: url('../img/aboutbg.jpg') no-repeat;
-  background-size: 100%;
+  background: url('http://localhost/armaan/img/aboutbg.jpg') no-repeat;
+  background-size: 55% 92%;
   height: 365px;
+  width: 100%;
   overflow: hidden;
-  margin-bottom: 2%;
+  margin-left: 85px;
+  margin-right: -150px;
+  margin-bottom: 1%;
 }
 .aboutus h2 {
   color: #f58d65;
+  padding-left: 30px;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Open Sans';
 }
 .aboutus p {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 90%;
+  word-spacing: 3px;
+  padding-right: 20px;
+  padding-left: 30px;
+  height: 250px;
+  font-size: 12px;
+  font-family: 'Lato';
+  line-height: 21px;
+  font-weight: bold;
 }
 .aboutus .dish img {
   height: auto;
-  width: 310px;
+  width: 220px;
 }
 footer {
   border-top: 1px solid #000;
-  padding: 1% 0;
+  padding: 1%;
   background-color: rgba(255, 255, 255, 0.7);
   color: #000;
-  font-weight: 700;
   letter-spacing: 2px;
   word-spacing: 5px;
+  font-family: 'Lato';
+  font-size: 12px;
 }
 .feed {
   background: url('../img/feedback_bg.jpg') no-repeat;
