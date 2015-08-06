@@ -57,7 +57,7 @@ body {
   background-color: #231f20;
 }
 .products {
-  margin-left: 3%;
+  margin-left: 8%;
 }
 .products .container .prod .prodarray {
   color: #FF6633;
@@ -78,7 +78,7 @@ body {
   font-size: 14px;
 }
 .product-list {
-  min-height: 600px;
+  min-height: 552px;
   background-color: #D2AE6D;
 }
 .product-list h2 {
@@ -156,6 +156,34 @@ ul li a:hover {
   font-size: 12px;
 }
 .feed {
-  background: url('../img/feedback_bg.jpg') no-repeat;
+  background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
+}
+.feed p {
+  color: #ff6633;
+}
+form label span {
+  color: #ff6633;
+}
+form button.submit {
+  width: 200px;
+  background-color: #ff6633;
+  color: #fff;
+}
+form button.submit:hover {
+  border: 1px solid #ff6633;
+  background-color: #fff;
+  color: #ff6633;
+}
+form button.submit:focus {
+  outline: none;
+}
+form .lastgroup {
+  margin-bottom: 5px;
+}
+form .lastgroup .input1 {
+  padding-right: 6px;
+}
+form .lastgroup .input2 {
+  padding-left: 0;
 }
