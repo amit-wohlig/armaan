@@ -156,17 +156,29 @@ ul li a:hover {
   font-size: 12px;
 }
 .feed {
+  padding: 5%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
 }
 .feed p {
   color: #ff6633;
 }
+.feedback {
+  margin-bottom: 5px;
+  position: relative;
+}
+.feedback p {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  font-size: 15px;
+  transform: translate(-50%, -10%);
+}
 form label span {
   color: #ff6633;
 }
 form button.submit {
-  width: 200px;
+  width: 184px;
   background-color: #ff6633;
   color: #fff;
 }

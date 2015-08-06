@@ -193,10 +193,23 @@ ul li a:hover {
 
 //feedback page
 .feed {
+    padding: 5%;
     background: url('../img/feedback_backg.png') no-repeat;
     background-size: 100% 100%;
     p {
         color: #ff6633;
+    }
+}
+
+.feedback {
+    margin-bottom: 5px;
+    position: relative;
+    p {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        font-size: 15px;
+        transform:translate(-50%,-10%);
     }
 }
 
@@ -207,7 +220,7 @@ form {
         }
     }
     button.submit {
-        width: 200px;
+        width: 184px;
         background-color: #ff6633;
         color: #fff;
     }
@@ -217,9 +230,8 @@ form {
         color: #ff6633;
     }
     button.submit:focus {
-     outline: none;   
+        outline: none;
     }
-    
     .lastgroup {
         margin-bottom: 5px;
         .input1 {
