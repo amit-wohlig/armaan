@@ -127,18 +127,20 @@ ul li a:hover {
   margin-right: -150px;
   margin-bottom: 15px;
 }
+.aboutus .abt-info {
+  padding-top: 6%;
+}
 .aboutus .abt {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 .aboutus .abt h2 {
+  padding-left: 30px;
+  margin: 0;
   color: #f58d65;
-  font-size: 38px;
-  font-weight: 300;
+  font-size: 40px;
   font-family: CENSCBK;
   word-spacing: 2px;
-  padding-top: 4%;
-  padding-left: 30px;
 }
 .aboutus .abt p {
   width: 95%;
@@ -151,8 +153,7 @@ ul li a:hover {
   font-weight: bold;
 }
 .aboutus .dish img {
-  height: 330px;
-  width: 310px;
+  width: 100%;
   padding-top: 26px;
   margin-left: -14px;
 }
