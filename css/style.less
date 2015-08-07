@@ -13,6 +13,12 @@ a:hover {
     text-decoration: none;
 }
 
+//font-face
+@font-face {
+    font-family: CENSCBK;
+    src: url('../fonts/CENSCBK.ttf');
+}
+
 //body
 body {
     background: url('../img/body_bg.jpg');
@@ -166,7 +172,7 @@ ul li a:hover {
             padding-left: 30px;
             height: 260px;
             font-size: 12px;
-            font-family: @fontdata;
+            font-family: CENSCBK;
             line-height: 21px;
             font-weight: bold;
         }
@@ -274,7 +280,7 @@ ul li a:hover {
         }
     }
     .formdata {
-     padding-left: 6%;   
+        padding-left: 6%;
     }
     form {
         label {
@@ -285,7 +291,7 @@ ul li a:hover {
             }
         }
         input:focus {
-         outline: none;
+            outline: none;
             border-color: @menuselect;
             box-shadow: 0 0 0 @menuselect;
         }
