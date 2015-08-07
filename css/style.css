@@ -129,8 +129,8 @@ ul li a:hover {
   color: #f58d65;
   font-size: 38px;
   font-weight: 300;
-  font-family: 'Open Sans';
-  word-spacing: 10px;
+  font-family: CENSCBK;
+  word-spacing: 2px;
   padding-top: 4%;
   padding-left: 30px;
 }
@@ -140,7 +140,7 @@ ul li a:hover {
   padding-left: 30px;
   height: 260px;
   font-size: 12px;
-  font-family: CENSCBK;
+  font-family: 'Lato';
   line-height: 21px;
   font-weight: bold;
 }
@@ -161,61 +161,62 @@ ul li a:hover {
   font-family: 'Lato';
   font-size: 12px;
 }
-.feed {
-  padding: 3% 5% 5% 5%;
+.cont-feed {
+  padding: 4%;
+  background: url('../img/feedback_backg.png') no-repeat;
+  background-size: 100% 100%;
 }
-.feed .cont-florals {
+.cont-feed .cont-florals {
   margin-bottom: 5px;
   position: relative;
 }
-.feed .cont-florals img.conthead {
-  width: 80%;
+.cont-feed .cont-florals img {
+  width: 94%;
+  margin-left: 3%;
+  margin-bottom: 7%;
 }
-.feed .cont-florals p {
+.cont-feed .cont-florals p {
   position: absolute;
   top: 10%;
-  left: 39%;
+  left: 49%;
   color: #f2663a;
   font-size: 15px;
   transform: translate(-50%, -10%);
 }
-.feed .contact {
+.cont-feed .contact {
   padding-right: 0;
 }
-.feed .contact address span {
+.cont-feed .contact address span {
+  font-family: 'Lato';
   display: block;
   text-transform: capitalize;
 }
-.feed .contact address span a {
+.cont-feed .contact address span a {
   color: #000;
 }
-.feed .contact address span a:hover {
+.cont-feed .contact address span a:hover {
   color: #f2663a;
 }
-.feed .contact address span:nth-child(1) {
+.cont-feed .contact address span:nth-child(1) {
   margin-bottom: 6%;
   color: #f2663a;
   font-size: 16px;
   font-weight: 700;
 }
-.feed .contact address span:nth-child(5) {
+.cont-feed .contact address span:nth-child(5) {
   margin-bottom: 3%;
 }
-.feed .contact address span:nth-child(7) {
+.cont-feed .contact address span:nth-child(7) {
   text-transform: lowercase;
 }
-.feed .contact .enquiry a {
+.cont-feed .contact .enquiry a {
   color: #f2663a;
 }
-.feed .contact .enquiry a:hover {
+.cont-feed .contact .enquiry a:hover {
   text-decoration: underline;
 }
-.feed .map iframe {
-  width: 80%;
-  height: 80%;
-}
 .feed {
-  padding: 3% 5% 5% 5%;
+  padding: 4%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
   margin-bottom: 3%;
