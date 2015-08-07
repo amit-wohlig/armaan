@@ -157,44 +157,64 @@ ul li a:hover {
   font-family: 'Lato';
   font-size: 12px;
 }
-.contact {
+.feed {
+  padding: 3% 5% 5% 5%;
+}
+.feed .cont-florals {
+  margin-bottom: 5px;
+  position: relative;
+}
+.feed .cont-florals img.conthead {
+  width: 80%;
+}
+.feed .cont-florals p {
+  position: absolute;
+  top: 10%;
+  left: 39%;
+  color: #f2663a;
+  font-size: 15px;
+  transform: translate(-50%, -10%);
+}
+.feed .contact {
   padding-right: 0;
 }
-address span {
+.feed .contact address span {
   display: block;
   text-transform: capitalize;
 }
-address span a {
+.feed .contact address span a {
   color: #000;
 }
-address span a:hover {
-  color: #ff6633;
+.feed .contact address span a:hover {
+  color: #f2663a;
 }
-address span:nth-child(1) {
+.feed .contact address span:nth-child(1) {
   margin-bottom: 6%;
-  color: #ff6633;
+  color: #f2663a;
   font-size: 16px;
   font-weight: 700;
 }
-address span:nth-child(5) {
+.feed .contact address span:nth-child(5) {
   margin-bottom: 3%;
 }
-address span:nth-child(7) {
+.feed .contact address span:nth-child(7) {
   text-transform: lowercase;
 }
-.enquiry a {
-  color: #ff6633;
+.feed .contact .enquiry a {
+  color: #f2663a;
 }
-.enquiry a:hover {
+.feed .contact .enquiry a:hover {
   text-decoration: underline;
 }
+.feed .map iframe {
+  width: 80%;
+  height: 80%;
+}
 .feed {
-  padding: 5%;
+  padding: 3% 5% 5% 5%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
-  background-size: 80% 100%;
-  height: 400px;
-  width: 100%;
+  margin-bottom: 3%;
 }
 .feed .head-floral {
   margin-bottom: 5px;
@@ -204,25 +224,34 @@ address span:nth-child(7) {
   position: absolute;
   top: 10%;
   left: 50%;
-  color: #ff6633;
+  color: #f2663a;
   font-size: 15px;
   transform: translate(-50%, -10%);
 }
-.feed form {
-  height: 100px;
+.feed .formdata {
+  padding-left: 6%;
+}
+.feed form label {
+  font-family: 'Lato';
+  font-size: 14px;
 }
 .feed form label span {
-  color: #ff6633;
+  color: #f2663a;
+}
+.feed form input:focus {
+  outline: none;
+  border-color: #f2663a;
+  box-shadow: 0 0 0 #f2663a;
 }
 .feed form button.submit {
-  width: 184px;
-  background-color: #ff6633;
+  width: 195px;
+  background-color: #f2663a;
   color: #fff;
 }
 .feed form button.submit:hover {
-  border: 1px solid #ff6633;
+  border: 1px solid #f2663a;
   background-color: #fff;
-  color: #ff6633;
+  color: #f2663a;
 }
 .feed form button.submit:focus {
   outline: none;

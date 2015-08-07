@@ -3,35 +3,35 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('AboutusCtrl', function($scope, TemplateService, NavigationService, cfpLoadingBar, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("aboutus");
-    $scope.menutitle = NavigationService.makeactive("About Us");
+    $scope.menutitle = NavigationService.makeactive("ABOUT US");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('AvailableatCtrl', function($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("availableat");
-    $scope.menutitle = NavigationService.makeactive("Available At");
+    $scope.menutitle = NavigationService.makeactive("AVAILABLE AT");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('ContactCtrl', function($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("contact");
-    $scope.menutitle = NavigationService.makeactive("Contact");
+    $scope.menutitle = NavigationService.makeactive("CONTACT");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('MediaCtrl', function($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("media");
-    $scope.menutitle = NavigationService.makeactive("Media");
+    $scope.menutitle = NavigationService.makeactive("MEDIA");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('ProductCtrl', function($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("product");
-    $scope.menutitle = NavigationService.makeactive("Product");
+    $scope.menutitle = NavigationService.makeactive("PRODUCTS");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
