@@ -10,9 +10,11 @@ body {
   background: url('../img/header_texture.jpg');
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 .header img {
-  width: 100%;
+  width: 90%;
+  height: 60px;
 }
 .footers {
   border-top: 2px solid #606062;
@@ -106,14 +108,14 @@ ul li a:hover {
   font-weight: bold;
 }
 .aboutus {
-  background: url('http://localhost/armaan/img/aboutbg.jpg') no-repeat;
-  background-size: 55% 100%;
-  height: 365px;
+  background: url('../img/aboutbg.jpg') no-repeat;
+  background-size: 80% 100%;
+  height: 400px;
   width: 100%;
   overflow: hidden;
   margin-left: 85px;
   margin-right: -150px;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 .aboutus .abt {
   overflow-y: scroll;
@@ -121,18 +123,18 @@ ul li a:hover {
 }
 .aboutus .abt h2 {
   color: #f58d65;
-  padding-left: 30px;
   font-size: 38px;
   font-weight: 300;
   font-family: 'Open Sans';
   word-spacing: 10px;
+  padding-top: 4%;
+  padding-left: 30px;
 }
 .aboutus .abt p {
-  width: 90%;
+  width: 95%;
   word-spacing: 3px;
-  padding-right: 20px;
   padding-left: 30px;
-  height: 270px;
+  height: 260px;
   font-size: 12px;
   font-family: 'Lato';
   line-height: 21px;
@@ -141,8 +143,8 @@ ul li a:hover {
 .aboutus .dish img {
   height: 330px;
   width: 310px;
-  padding-top: 10px;
-  margin-left: -20px;
+  padding-top: 26px;
+  margin-left: -14px;
 }
 .footers {
   border-top: 1px solid #231f20;
@@ -190,12 +192,15 @@ address span:nth-child(7) {
   padding: 5%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
+  background-size: 80% 100%;
+  height: 400px;
+  width: 100%;
 }
-.head-floral {
+.feed .head-floral {
   margin-bottom: 5px;
   position: relative;
 }
-.head-floral p {
+.feed .head-floral p {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -203,28 +208,31 @@ address span:nth-child(7) {
   font-size: 15px;
   transform: translate(-50%, -10%);
 }
-form label span {
+.feed form {
+  height: 100px;
+}
+.feed form label span {
   color: #ff6633;
 }
-form button.submit {
+.feed form button.submit {
   width: 184px;
   background-color: #ff6633;
   color: #fff;
 }
-form button.submit:hover {
+.feed form button.submit:hover {
   border: 1px solid #ff6633;
   background-color: #fff;
   color: #ff6633;
 }
-form button.submit:focus {
+.feed form button.submit:focus {
   outline: none;
 }
-form .lastgroup {
+.feed form .lastgroup {
   margin-bottom: 5px;
 }
-form .lastgroup .input1 {
+.feed form .lastgroup .input1 {
   padding-right: 6px;
 }
-form .lastgroup .input2 {
+.feed form .lastgroup .input2 {
   padding-left: 0;
 }
