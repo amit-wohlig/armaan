@@ -22,6 +22,9 @@ a:hover {
 //body
 body {
     background: url('../img/body_bg.jpg');
+    .overflowhiddendiv {
+        overflow: hidden;
+    }
 }
 
 //header
@@ -55,8 +58,9 @@ body {
     background: @active;
     margin-bottom: 40px;
     font-family: @fonthead;
-    font-weight: bold;
+    //    font-weight: 700;
     font-size: @fontproduct;
+    letter-spacing: 1px;
     div {
         padding-left: 8%;
         padding-right: 8%;
@@ -156,7 +160,7 @@ ul li a:hover {
     background-size: contain;
     overflow: hidden;
     margin-right: -150px;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
     ::-webkit-scrollbar {
         width: 4px;
     }
@@ -227,6 +231,7 @@ ul li a:hover {
     padding: 4%;
     background: url('../img/feedback_backg.png') no-repeat;
     background-size: 100% 100%;
+    margin-bottom: 2%;
     .cont-florals {
         margin-bottom: 5px;
         position: relative;
@@ -240,8 +245,10 @@ ul li a:hover {
             top: 10%;
             left: 49%;
             color: @menuselect;
-            font-size: 15px;
+            font-size: 14px;
             transform: translate(-50%, -10%);
+            font-weight: 700;
+            word-break: 3px;
         }
     }
     .contact {
@@ -285,6 +292,7 @@ ul li a:hover {
 //feedback page
 .feed {
     padding: 4%;
+    margin-left: 12%;
     background: url('../img/feedback_backg.png') no-repeat;
     background-size: 100% 100%;
     margin-bottom: 3%;
@@ -296,7 +304,8 @@ ul li a:hover {
             top: 10%;
             left: 50%;
             color: @menuselect;
-            font-size: 15px;
+            font-size: 14px;
+            font-weight: 700;
             transform: translate(-50%, -10%);
         }
     }
@@ -307,9 +316,16 @@ ul li a:hover {
         label {
             font-family: @fontdata;
             font-size: @fontproduct;
+            font-weight: 700;
+            text-align: left !important;
             span {
                 color: @menuselect;
             }
+        }
+        input {
+            width: 100%;
+            box-shadow: none;
+            background-color: transparent;
         }
         input:focus {
             outline: none;
@@ -317,7 +333,7 @@ ul li a:hover {
             box-shadow: 0 0 0 @menuselect;
         }
         button.submit {
-            width: 200px;
+            width: 177px;
             background-color: @menuselect;
             color: #fff;
         }
@@ -331,6 +347,9 @@ ul li a:hover {
         }
         .lastgroup {
             margin-bottom: 5px;
+            label {
+                word-spacing: 5px;
+            }
             .input1 {
                 padding-right: 6px;
             }
@@ -353,7 +372,7 @@ ul li a:hover {
     .slides {
         li {
             img {
-//                max-height: 765px;
+                //                max-height: 765px;
             }
         }
     }
@@ -361,4 +380,8 @@ ul li a:hover {
 
 .relative-box {
     position: relative;
+}
+
+.hidenav .slider {
+    display: none;
 }

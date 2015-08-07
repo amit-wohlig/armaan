@@ -10,6 +10,9 @@ a:hover {
 body {
   background: url('../img/body_bg.jpg');
 }
+body .overflowhiddendiv {
+  overflow: hidden;
+}
 .header {
   background: url('../img/header_texture.jpg');
   padding-top: 10px;
@@ -36,8 +39,8 @@ body {
   background: #231f20;
   margin-bottom: 40px;
   font-family: 'Open Sans';
-  font-weight: bold;
   font-size: 14px;
+  letter-spacing: 1px;
 }
 .menus div {
   padding-left: 8%;
@@ -123,7 +126,7 @@ ul li a:hover {
   background-size: contain;
   overflow: hidden;
   margin-right: -150px;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
 }
 .aboutus ::-webkit-scrollbar {
   width: 4px;
@@ -194,6 +197,7 @@ ul li a:hover {
   padding: 4%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
+  margin-bottom: 2%;
 }
 .cont-feed .cont-florals {
   margin-bottom: 5px;
@@ -209,8 +213,10 @@ ul li a:hover {
   top: 10%;
   left: 49%;
   color: #ff6633;
-  font-size: 15px;
+  font-size: 14px;
   transform: translate(-50%, -10%);
+  font-weight: 700;
+  word-break: 3px;
 }
 .cont-feed .contact {
   padding-right: 0;
@@ -246,6 +252,7 @@ ul li a:hover {
 }
 .feed {
   padding: 4%;
+  margin-left: 12%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
   margin-bottom: 3%;
@@ -259,7 +266,8 @@ ul li a:hover {
   top: 10%;
   left: 50%;
   color: #ff6633;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 700;
   transform: translate(-50%, -10%);
 }
 .feed .formdata {
@@ -268,9 +276,16 @@ ul li a:hover {
 .feed form label {
   font-family: 'Lato';
   font-size: 14px;
+  font-weight: 700;
+  text-align: left !important;
 }
 .feed form label span {
   color: #ff6633;
+}
+.feed form input {
+  width: 100%;
+  box-shadow: none;
+  background-color: transparent;
 }
 .feed form input:focus {
   outline: none;
@@ -278,7 +293,7 @@ ul li a:hover {
   box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
-  width: 200px;
+  width: 177px;
   background-color: #ff6633;
   color: #fff;
 }
@@ -292,6 +307,9 @@ ul li a:hover {
 }
 .feed form .lastgroup {
   margin-bottom: 5px;
+}
+.feed form .lastgroup label {
+  word-spacing: 5px;
 }
 .feed form .lastgroup .input1 {
   padding-right: 6px;
@@ -310,4 +328,7 @@ ul li a:hover {
 }
 .relative-box {
   position: relative;
+}
+.hidenav .slider {
+  display: none;
 }
