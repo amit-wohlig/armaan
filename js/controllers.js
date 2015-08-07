@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'cfp.loadingBar', 'infinite-scroll', 'toaster', 'ngAnimate', 'ngAutocomplete', 'ngTagsInput', 'ngDialog', 'ngSocial', 'valdr', 'ngSanitize', 'ui.select'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'cfp.loadingBar', 'infinite-scroll', 'toaster', 'ngAnimate', 'ngAutocomplete', 'ngTagsInput', 'ngDialog', 'ngSocial', 'valdr', 'ngSanitize', 'ui.select','angular-flexslider'])
 
 .controller('AboutusCtrl', function($scope, TemplateService, NavigationService, cfpLoadingBar, $timeout) {
     //Used to name the .html file
@@ -46,4 +46,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.template = TemplateService;
 })
 
-;
+.controller('sliderctrl', function ($scope, TemplateService) {
+    $scope.template = TemplateService;
+    
+    $scope.slides = [
+    'img/slider/1.jpg',
+    'img/slider/2.jpg',
+    'img/slider/3.jpg',
+    'img/slider/4.jpg',
+    'img/slider/5.jpg',
+    'img/slider/6.jpg',
+    'img/slider/7.jpg',
+    'img/slider/8.jpg'
+   ];
+});

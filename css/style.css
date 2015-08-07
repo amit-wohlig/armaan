@@ -299,3 +299,15 @@ ul li a:hover {
 .feed form .lastgroup .input2 {
   padding-left: 0;
 }
+.flexs {
+  margin-top: -40px;
+  position: absolute;
+  z-index: -1;
+}
+.flexs .flexslider {
+  border: none;
+  margin: 0;
+}
+.relative-box {
+  position: relative;
+}
