@@ -73,6 +73,12 @@ body {
   width: 100%;
   border: 3px solid #E6E7E8;
 }
+.products .container .prod .prodarray a {
+  color: #f2663a;
+}
+.products .container .prod .prodarray a:hover {
+  color: #000;
+}
 .products .container .prod .prodarray .img-descp {
   margin-bottom: 14px;
   font-size: 14px;
