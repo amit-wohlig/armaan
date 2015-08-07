@@ -6,6 +6,7 @@
 @sidemenu: #d2ac67;
 @productrange: #f8f2e6;
 @active: #231f20;
+@footers: #e6e7e8;
 @fonthead: 'Open Sans';
 @fontdata: 'Lato';
 @fontproduct: 14px;
@@ -39,26 +40,11 @@ body {
     }
 }
 
-//footer
-.footers {
-    border-top: 2px solid #606062;
-    padding: 1% 0;
-    background-color: rgba(255, 255, 255, .7);
-    color: @active;
-    font-weight: 700;
-    letter-spacing: 2px;
-    word-spacing: 5px;
-    p {
-        margin: 0;
-    }
-}
-
 //Menu
 .menus {
     background: @active;
     margin-bottom: 40px;
     font-family: @fonthead;
-    //    font-weight: 700;
     font-size: @fontproduct;
     letter-spacing: 1px;
     div {
@@ -81,6 +67,7 @@ body {
             text-decoration: none;
             background-color: @active;
             color: @menuselect;
+            font-weight: normal;
         }
         .nav>li>a:focus,
         .nav>li>a:hover {
@@ -155,12 +142,12 @@ ul li a:hover {
 
 //About Us
 .aboutus {
-    height: 600px;
+    height: 572px;
     background: #fff url('../img/aboutbg.jpg') no-repeat;
     background-size: contain;
     overflow: hidden;
-    margin-right: -150px;
-    margin-bottom: 2%;
+    //    margin-right: -150px;
+    margin-bottom: 20px;
     ::-webkit-scrollbar {
         width: 4px;
     }
@@ -187,7 +174,7 @@ ul li a:hover {
         h2 {
             padding-left: 30px;
             margin: 0;
-            color: @fonts;
+            color: @menuselect;
             font-size: 50px;
             font-family: CENSCBK;
             word-spacing: 2px;
@@ -197,7 +184,7 @@ ul li a:hover {
             height: 400px;
             padding-left: 30px;
             color: #373435;
-            font-size: 12px;
+            font-size: 13px;
             font-family: @fontdata;
             line-height: 21px;
             word-spacing: 3px;
@@ -206,6 +193,7 @@ ul li a:hover {
     .dish {
         img {
             width: 100%;
+            height: 540px;
             padding-top: 37px;
             padding-right: 20px;
             margin-left: -4px;
@@ -215,14 +203,16 @@ ul li a:hover {
 
 //Footer
 .footers {
-    border-top: 1px solid @active;
+    padding: 1% 0;
+    border-top: 1px solid @footers;
     background-color: rgba(255, 255, 255, .7);
     p {
         color: #201E1E;
         letter-spacing: 2px;
         word-spacing: 5px;
         font-family: @fontdata;
-        font-size: 12px;
+        font-size: @fontproduct;
+        margin: 0;
     }
 }
 
@@ -294,7 +284,7 @@ ul li a:hover {
     padding: 4%;
     margin-left: 12%;
     background: url('../img/feedback_backg.png') no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     margin-bottom: 3%;
     .head-floral {
         margin-bottom: 5px;
@@ -315,17 +305,18 @@ ul li a:hover {
     form {
         label {
             font-family: @fontdata;
-            font-size: @fontproduct;
-            font-weight: 700;
+            font-weight: normal;
+            font-size: 16px;
             text-align: left !important;
             span {
                 color: @menuselect;
             }
         }
         input {
-            width: 100%;
+            width: 400px;
             box-shadow: none;
             background-color: transparent;
+            height: 30px;
         }
         input:focus {
             outline: none;
@@ -336,6 +327,7 @@ ul li a:hover {
             width: 177px;
             background-color: @menuselect;
             color: #fff;
+            font-family: @fontdata;
         }
         button.submit:hover {
             border: 1px solid @menuselect;
@@ -348,13 +340,21 @@ ul li a:hover {
         .lastgroup {
             margin-bottom: 5px;
             label {
-                word-spacing: 5px;
+                word-spacing: 3px;
             }
             .input1 {
                 padding-right: 6px;
             }
-            .input2 {
-                padding-left: 0;
+            label[for="code"] {
+             padding-right: 0;
+                width: 180px;
+            }
+            
+            input[id="code"] {
+                width: 148px;
+            }
+            .code2{
+                margin-left: 10px;
             }
         }
     }
