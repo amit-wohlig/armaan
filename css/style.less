@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900|Open+Sans:400,300,600,700,800);
 @fonts: #f58d65;
 @menubg: #231f20;
-@menuselect: #f2663a;
+@menuselect: #ff6633;
 @sidemenu: #d2ac67;
 @productrange: #f8f2e6;
 @active: #231f20;
@@ -168,9 +168,9 @@ ul li a:hover {
         border-radius: 10px;
     }
     ::-webkit-scrollbar-thumb {
-       .border-radius(10px);
-//        border-radius: 10px;
-        background:grey;
+        .border-radius(10px);
+        //        border-radius: 10px;
+        background: grey;
         .box-shadow(inset 0 0 6px rgba(0, 0, 0, 0.5));
     }
     ::-webkit-scrollbar-thumb:window-inactive {
@@ -192,13 +192,14 @@ ul li a:hover {
         }
         p {
             width: 95%;
-            word-spacing: 3px;
-            padding-left: 30px;
             height: 260px;
+            padding-left: 30px;
+            color: #373435;
             font-size: 12px;
             font-family: @fontdata;
-            line-height: 21px;
             font-weight: bold;
+            line-height: 21px;
+            word-spacing: 3px;
         }
     }
     .dish {
@@ -215,7 +216,7 @@ ul li a:hover {
     border-top: 1px solid @active;
     background-color: rgba(255, 255, 255, .7);
     p {
-        color: @active;
+        color: #201E1E;
         letter-spacing: 2px;
         word-spacing: 5px;
         font-family: @fontdata;

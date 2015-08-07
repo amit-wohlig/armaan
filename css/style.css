@@ -49,13 +49,13 @@ body {
 .menus div .nav-pills > li.active > a,
 .menus div .nav-pills > li.active > a:focus,
 .menus div .nav-pills > li.active > a:hover {
-  color: #f2663a;
+  color: #ff6633;
   background-color: #231f20;
 }
 .menus div .nav > li > a:hover {
   text-decoration: none;
   background-color: #231f20;
-  color: #f2663a;
+  color: #ff6633;
 }
 .menus div .nav > li > a:focus,
 .menus div .nav > li > a:hover {
@@ -74,7 +74,7 @@ body {
   border: 3px solid #E6E7E8;
 }
 .products .container .prod .prodarray a {
-  color: #f2663a;
+  color: #ff6633;
 }
 .products .container .prod .prodarray a:hover {
   color: #000;
@@ -167,13 +167,14 @@ ul li a:hover {
 }
 .aboutus .abt p {
   width: 95%;
-  word-spacing: 3px;
-  padding-left: 30px;
   height: 260px;
+  padding-left: 30px;
+  color: #373435;
   font-size: 12px;
   font-family: 'Lato';
-  line-height: 21px;
   font-weight: bold;
+  line-height: 21px;
+  word-spacing: 3px;
 }
 .aboutus .dish img {
   width: 100%;
@@ -185,7 +186,7 @@ ul li a:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 .footers p {
-  color: #231f20;
+  color: #201E1E;
   letter-spacing: 2px;
   word-spacing: 5px;
   font-family: 'Lato';
@@ -209,7 +210,7 @@ ul li a:hover {
   position: absolute;
   top: 10%;
   left: 49%;
-  color: #f2663a;
+  color: #ff6633;
   font-size: 15px;
   transform: translate(-50%, -10%);
 }
@@ -225,11 +226,11 @@ ul li a:hover {
   color: #000;
 }
 .cont-feed .contact address span a:hover {
-  color: #f2663a;
+  color: #ff6633;
 }
 .cont-feed .contact address span:nth-child(1) {
   margin-bottom: 6%;
-  color: #f2663a;
+  color: #ff6633;
   font-size: 16px;
   font-weight: 700;
 }
@@ -240,7 +241,7 @@ ul li a:hover {
   text-transform: lowercase;
 }
 .cont-feed .contact .enquiry a {
-  color: #f2663a;
+  color: #ff6633;
 }
 .cont-feed .contact .enquiry a:hover {
   text-decoration: underline;
@@ -259,7 +260,7 @@ ul li a:hover {
   position: absolute;
   top: 10%;
   left: 50%;
-  color: #f2663a;
+  color: #ff6633;
   font-size: 15px;
   transform: translate(-50%, -10%);
 }
@@ -271,22 +272,22 @@ ul li a:hover {
   font-size: 14px;
 }
 .feed form label span {
-  color: #f2663a;
+  color: #ff6633;
 }
 .feed form input:focus {
   outline: none;
-  border-color: #f2663a;
-  box-shadow: 0 0 0 #f2663a;
+  border-color: #ff6633;
+  box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
   width: 195px;
-  background-color: #f2663a;
+  background-color: #ff6633;
   color: #fff;
 }
 .feed form button.submit:hover {
-  border: 1px solid #f2663a;
+  border: 1px solid #ff6633;
   background-color: #fff;
-  color: #f2663a;
+  color: #ff6633;
 }
 .feed form button.submit:focus {
   outline: none;
