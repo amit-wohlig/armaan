@@ -43,7 +43,7 @@ body {
 //Menu
 .menus {
     background: @active;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-family: @fonthead;
     font-size: @fontproduct;
     letter-spacing: 1px;
@@ -285,7 +285,7 @@ ul li a:hover {
     margin-left: 12%;
     background: url('../img/feedback_backg.png') no-repeat;
     background-size: cover;
-    margin-bottom: 3%;
+    margin-bottom: 20px;
     .head-floral {
         margin-bottom: 5px;
         position: relative;
@@ -324,7 +324,7 @@ ul li a:hover {
             box-shadow: 0 0 0 @menuselect;
         }
         button.submit {
-            width: 177px;
+            width: 146px;
             background-color: @menuselect;
             color: #fff;
             font-family: @fontdata;
@@ -346,14 +346,13 @@ ul li a:hover {
                 padding-right: 6px;
             }
             label[for="code"] {
-             padding-right: 0;
+                padding-right: 0;
                 width: 180px;
             }
-            
             input[id="code"] {
                 width: 148px;
             }
-            .code2{
+            .code2 {
                 margin-left: 10px;
             }
         }
@@ -384,4 +383,24 @@ ul li a:hover {
 
 .hidenav .slider {
     display: none;
+}
+
+//product info
+.productdata {
+    .img-descp {
+        margin-bottom: 14px;
+        font-size: @fontproduct;
+        h3 {
+            padding-top: 12px;
+            border-top: 1px solid #D2D3D5;
+            margin: 14px 0 0 0;
+            font-size: @fontproduct;
+        }
+    }
+    .prodinfo {
+        p {
+            font-family: @fontdata;
+            font-size: 13px;
+        }
+    }
 }

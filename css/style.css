@@ -25,7 +25,7 @@ body .overflowhiddendiv {
 }
 .menus {
   background: #231f20;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: 'Open Sans';
   font-size: 14px;
   letter-spacing: 1px;
@@ -246,7 +246,7 @@ ul li a:hover {
   margin-left: 12%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: cover;
-  margin-bottom: 3%;
+  margin-bottom: 20px;
 }
 .feed .head-floral {
   margin-bottom: 5px;
@@ -285,7 +285,7 @@ ul li a:hover {
   box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
-  width: 177px;
+  width: 146px;
   background-color: #ff6633;
   color: #fff;
   font-family: 'Lato';
@@ -331,4 +331,18 @@ ul li a:hover {
 }
 .hidenav .slider {
   display: none;
+}
+.productdata .img-descp {
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+.productdata .img-descp h3 {
+  padding-top: 12px;
+  border-top: 1px solid #D2D3D5;
+  margin: 14px 0 0 0;
+  font-size: 14px;
+}
+.productdata .prodinfo p {
+  font-family: 'Lato';
+  font-size: 13px;
 }
