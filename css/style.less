@@ -297,6 +297,7 @@ ul li a:hover {
             font-size: 14px;
             font-weight: 700;
             transform: translate(-50%, -10%);
+            word-spacing: 3px;
         }
     }
     .formdata {
@@ -313,10 +314,11 @@ ul li a:hover {
             }
         }
         input {
-            width: 400px;
-            box-shadow: none;
-            background-color: transparent;
+            width: 100%;
             height: 30px;
+            border-radius: 2px;
+            background-color: transparent;
+            box-shadow: none;
         }
         input:focus {
             outline: none;
@@ -324,7 +326,8 @@ ul li a:hover {
             box-shadow: 0 0 0 @menuselect;
         }
         button.submit {
-            width: 146px;
+            width: 148px;
+            border-radius: 2px;
             background-color: @menuselect;
             color: #fff;
             font-family: @fontdata;
@@ -355,6 +358,9 @@ ul li a:hover {
             .code2 {
                 margin-left: 10px;
             }
+        }
+        .last-button {
+            padding-right: 12px;
         }
     }
 }
@@ -402,5 +408,30 @@ ul li a:hover {
             font-family: @fontdata;
             font-size: 13px;
         }
+    }
+}
+
+//media-page
+.videos {
+    .info-media {
+        position: relative;
+        margin-bottom: 30px;
+        p {
+            position: absolute;
+            top: 30%;
+            left: 10.5%;
+            color: @menuselect;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.main-video {
+    width: 80%;
+    margin: 0 auto;
+    iframe {
+        width: 100%;
+        min-height: 500px;
     }
 }

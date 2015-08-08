@@ -27,6 +27,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("MEDIA");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.hidenav = 'hidenav';
 })
 
 .controller('ProductCtrl', function ($scope, TemplateService, NavigationService) {

@@ -260,6 +260,7 @@ ul li a:hover {
   font-size: 14px;
   font-weight: 700;
   transform: translate(-50%, -10%);
+  word-spacing: 3px;
 }
 .feed .formdata {
   padding-left: 6%;
@@ -274,10 +275,11 @@ ul li a:hover {
   color: #ff6633;
 }
 .feed form input {
-  width: 400px;
-  box-shadow: none;
-  background-color: transparent;
+  width: 100%;
   height: 30px;
+  border-radius: 2px;
+  background-color: transparent;
+  box-shadow: none;
 }
 .feed form input:focus {
   outline: none;
@@ -285,7 +287,8 @@ ul li a:hover {
   box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
-  width: 146px;
+  width: 148px;
+  border-radius: 2px;
   background-color: #ff6633;
   color: #fff;
   font-family: 'Lato';
@@ -317,6 +320,9 @@ ul li a:hover {
 .feed form .lastgroup .code2 {
   margin-left: 10px;
 }
+.feed form .last-button {
+  padding-right: 12px;
+}
 .flexs {
   margin-top: -40px;
   position: absolute;
@@ -345,4 +351,24 @@ ul li a:hover {
 .productdata .prodinfo p {
   font-family: 'Lato';
   font-size: 13px;
+}
+.videos .info-media {
+  position: relative;
+  margin-bottom: 30px;
+}
+.videos .info-media p {
+  position: absolute;
+  top: 30%;
+  left: 10.5%;
+  color: #ff6633;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main-video {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-video iframe {
+  width: 100%;
+  min-height: 500px;
 }
