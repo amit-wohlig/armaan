@@ -3,28 +3,28 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 .controller('AboutusCtrl', function ($scope, TemplateService, NavigationService, cfpLoadingBar, $timeout) {
     //Used to name the .html file
     $scope.template = TemplateService.changecontent("aboutus");
-    $scope.menutitle = NavigationService.makeactive("ABOUT US");
+    $scope.menutitle = NavigationService.makeactive("about us");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('AvailableatCtrl', function ($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("availableat");
-    $scope.menutitle = NavigationService.makeactive("AVAILABLE AT");
+    $scope.menutitle = NavigationService.makeactive("available at");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('ContactCtrl', function ($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("contact");
-    $scope.menutitle = NavigationService.makeactive("CONTACT");
+    $scope.menutitle = NavigationService.makeactive("contact");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
 
 .controller('MediaCtrl', function ($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("media");
-    $scope.menutitle = NavigationService.makeactive("MEDIA");
+    $scope.menutitle = NavigationService.makeactive("media");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.hidenav = 'hidenav';
@@ -32,7 +32,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('ProductCtrl', function ($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("product");
-    $scope.menutitle = NavigationService.makeactive("PRODUCTS");
+    $scope.menutitle = NavigationService.makeactive("products");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     
@@ -41,9 +41,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 .controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService) {
     $scope.template = TemplateService.changecontent("feedback");
-    $scope.menutitle = NavigationService.makeactive("FEEDBACK");
+    $scope.menutitle = NavigationService.makeactive("feedback");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+})
+    .controller('ProductinfoCtrl', function ($scope, TemplateService, NavigationService) {
+    $scope.template = TemplateService.changecontent("productinfo");
+    $scope.menutitle = NavigationService.makeactive("productinfo");
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+    $scope.hidenav = 'hidenav';
 })
 
 .controller('headerctrl', function ($scope, TemplateService) {

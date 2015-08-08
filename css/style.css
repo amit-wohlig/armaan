@@ -13,6 +13,9 @@ body {
 body .overflowhiddendiv {
   overflow: hidden;
 }
+.align {
+  margin: 4% 0 !important;
+}
 .header {
   background: url('../img/header_texture.jpg');
   padding-top: 10px;
@@ -35,6 +38,8 @@ body .overflowhiddendiv {
   padding-right: 8%;
 }
 .menus div ul li a {
+  font-weight: 600;
+  text-transform: uppercase;
   color: #fff;
 }
 .menus div .nav-pills > li.active > a,
@@ -74,24 +79,26 @@ body .overflowhiddendiv {
 .products .container .prod .prodarray .img-descp {
   margin-bottom: 14px;
   font-size: 14px;
+  font-weight: 600;
 }
 .products .container .prod .prodarray .img-descp h3 {
   padding-top: 12px;
   border-top: 1px solid #D2D3D5;
   margin: 14px 0 0 0;
   font-size: 14px;
+  font-weight: 600;
 }
 .product-list {
   min-height: 552px;
   background-color: #D2AE6D;
 }
 .product-list h2 {
-  padding: 22px 18px 18px;
-  border-bottom: 1px solid #fff;
+  padding: 20px 15px 15px;
+  border-bottom: 2px solid #fff;
   margin: 0;
   color: #fff;
-  font-size: 10pt;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .product-list ul {
@@ -99,15 +106,22 @@ body .overflowhiddendiv {
   font-size: 10pt;
 }
 .product-list ul li {
-  padding: 18px;
+  padding: 15px;
   border-bottom: 1px solid #fff;
   list-style-type: none;
 }
 .product-list ul li a {
   color: #000;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 ul li a:hover {
   font-weight: bold;
+}
+.active {
+  font-weight: 600;
 }
 .aboutus {
   height: 572px;
@@ -177,11 +191,12 @@ ul li a:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 .footers p {
-  color: #201E1E;
+  color: #000;
   letter-spacing: 2px;
   word-spacing: 5px;
   font-family: 'Lato';
   font-size: 14px;
+  font-weight: 600;
   margin: 0;
 }
 .cont-feed {
@@ -232,8 +247,11 @@ ul li a:hover {
 .cont-feed .contact address span:nth-child(5) {
   margin-bottom: 3%;
 }
-.cont-feed .contact address span:nth-child(7) {
+.cont-feed .contact address span:nth-child(7) > a {
   text-transform: lowercase;
+}
+.cont-feed .contact .enquiry {
+  font-family: 'Lato';
 }
 .cont-feed .contact .enquiry a {
   color: #ff6633;
@@ -291,11 +309,16 @@ ul li a:hover {
   box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
-  width: 181px;
+  width: 177px;
+  border: 1px solid #ff6633;
   border-radius: 2px;
   background-color: #ff6633;
   color: #fff;
   font-family: 'Lato';
+  -webkit-transition: all 0.85s linear;
+  -moz-transition: all 0.85s linear;
+  -o-transition: all 0.85s linear;
+  transition: all 0.85s linear;
 }
 .feed form button.submit:hover {
   border: 1px solid #ff6633;
@@ -368,4 +391,37 @@ ul li a:hover {
 .main-video iframe {
   width: 100%;
   min-height: 500px;
+}
+.main-video .img-container {
+  margin: 4% 0;
+}
+.main-video .img-container .img-holder > a {
+  border: 2px solid transparent;
+  display: block;
+}
+.main-video .img-container .img-holder > a:hover {
+  border: 2px solid #ff6633;
+}
+.main-video .img-container .img-holder > .active-img {
+  border: 2px solid #ff6633;
+}
+.prd-info {
+  border: 3px solid #E6E7E8;
+}
+.img-descp {
+  color: #ff6633;
+  text-align: center;
+  font-weight: 600;
+}
+.img-descp h3 {
+  padding-top: 12px;
+  margin: 14px 0 0 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.img-descp h3 span {
+  display: block;
+}
+.prd-info-descp {
+  line-height: 25px;
 }

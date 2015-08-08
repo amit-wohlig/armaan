@@ -49,6 +49,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
         url: "/product",
         templateUrl: "views/template.html",
         controller: 'ProductCtrl'
+    })  
+        .state('productinfo', {
+        url: "/product-info",
+        templateUrl: "views/template.html",
+        controller: 'ProductinfoCtrl'
     })
 
     $urlRouterProvider.otherwise("/aboutus");

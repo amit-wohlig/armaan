@@ -28,6 +28,10 @@ body {
     }
 }
 
+.align {
+    margin: 4% 0 !important;
+}
+
 //header
 .header {
     background: url('../img/header_texture.jpg');
@@ -53,6 +57,8 @@ body {
         ul {
             li {
                 a {
+                    font-weight: 600;
+                    text-transform: uppercase;
                     color: #fff;
                 }
             }
@@ -98,11 +104,13 @@ body {
                 .img-descp {
                     margin-bottom: 14px;
                     font-size: @fontproduct;
+                    font-weight: 600;
                     h3 {
                         padding-top: 12px;
                         border-top: 1px solid #D2D3D5;
                         margin: 14px 0 0 0;
                         font-size: @fontproduct;
+                        font-weight: 600;
                     }
                 }
             }
@@ -114,23 +122,24 @@ body {
     min-height: 552px;
     background-color: #D2AE6D;
     h2 {
-        padding: 22px 18px 18px;
-        border-bottom: 1px solid #fff;
+        padding: 20px 15px 15px;
+        border-bottom: 2px solid #fff;
         margin: 0;
         color: #fff;
-        font-size: 10pt;
-        font-weight: bold;
+        font-size: 14px;
+        font-weight: 600;
         text-transform: uppercase;
     }
     ul {
         padding: 0 16px;
         font-size: 10pt;
         li {
-            padding: 18px;
+            padding: 15px;
             border-bottom: 1px solid #fff;
             list-style-type: none;
             a {
                 color: #000;
+                .transition( all 0.90s ease);
             }
         }
     }
@@ -138,6 +147,10 @@ body {
 
 ul li a:hover {
     font-weight: bold;
+}
+
+.active {
+ font-weight: 600;   
 }
 
 //About Us
@@ -207,11 +220,12 @@ ul li a:hover {
     border-top: 1px solid @footers;
     background-color: rgba(255, 255, 255, .7);
     p {
-        color: #201E1E;
+        color: #000;
         letter-spacing: 2px;
         word-spacing: 5px;
         font-family: @fontdata;
         font-size: @fontproduct;
+        font-weight: 600;
         margin: 0;
     }
 }
@@ -264,11 +278,12 @@ ul li a:hover {
             span:nth-child(5) {
                 margin-bottom: 3%;
             }
-            span:nth-child(7) {
+            span:nth-child(7) > a {
                 text-transform: lowercase;
             }
         }
         .enquiry {
+            font-family: @fontdata;
             a {
                 color: @menuselect;
             }
@@ -314,11 +329,9 @@ ul li a:hover {
                 color: @menuselect;
             }
         }
-        
         label[for="code"] {
-         text-transform: none;   
+            text-transform: none;
         }
-        
         input {
             width: 100%;
             height: 30px;
@@ -332,11 +345,13 @@ ul li a:hover {
             box-shadow: 0 0 0 @menuselect;
         }
         button.submit {
-            width: 181px;
+            width: 177px;
+            border: 1px solid @menuselect;
             border-radius: 2px;
             background-color: @menuselect;
             color: #fff;
             font-family: @fontdata;
+            .transition( all 0.85s linear);
         }
         button.submit:hover {
             border: 1px solid @menuselect;
@@ -353,17 +368,17 @@ ul li a:hover {
             }
         }
         .last-button {
-           padding-left: 3px;
+            padding-left: 3px;
         }
     }
 }
 
 .input1 {
-    padding-right:0;
+    padding-right: 0;
 }
 
 .input2 {
- padding-left: 3px;   
+    padding-left: 3px;
 }
 
 //media
@@ -435,4 +450,41 @@ ul li a:hover {
         width: 100%;
         min-height: 500px;
     }
+    .img-container {
+        margin: 4% 0;
+        .img-holder > a {
+            border: 2px solid transparent;
+            display: block;
+        }
+        .img-holder > a:hover {
+            border: 2px solid @menuselect;
+        }
+        .img-holder > .active-img {
+            border: 2px solid @menuselect;
+        }
+    }
+}
+
+//product-info
+.prd-info {
+ border: 3px solid #E6E7E8;   
+}
+
+ .img-descp  {
+     color: @menuselect;
+     text-align: center;
+     font-weight: 600;
+    h3 {
+        padding-top: 12px;
+        margin: 14px 0 0 0;
+        font-size: 18px;
+        font-weight: 600;
+        span {
+            display: block;
+        }
+    }
+}
+
+.prd-info-descp {
+    line-height: 25px;
 }
