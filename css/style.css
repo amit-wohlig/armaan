@@ -41,6 +41,10 @@ body .overflowhiddendiv {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .menus div .nav-pills > li.active > a,
 .menus div .nav-pills > li.active > a:focus,
@@ -52,7 +56,6 @@ body .overflowhiddendiv {
   text-decoration: none;
   background-color: #231f20;
   color: #ff6633;
-  font-weight: normal;
 }
 .menus div .nav > li > a:focus,
 .menus div .nav > li > a:hover {
@@ -72,6 +75,10 @@ body .overflowhiddendiv {
 }
 .products .container .prod .prodarray a {
   color: #ff6633;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .products .container .prod .prodarray a:hover {
   color: #000;
@@ -112,13 +119,13 @@ body .overflowhiddendiv {
 }
 .product-list ul li a {
   color: #000;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  transition: all 0.9s ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
-ul li a:hover {
-  font-weight: bold;
+.product-list ul li a:hover {
+  font-weight: 600;
 }
 .active {
   font-weight: 600;
@@ -255,6 +262,10 @@ ul li a:hover {
 }
 .cont-feed .contact .enquiry a {
   color: #ff6633;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 .cont-feed .contact .enquiry a:hover {
   text-decoration: underline;
@@ -315,10 +326,10 @@ ul li a:hover {
   background-color: #ff6633;
   color: #fff;
   font-family: 'Lato';
-  -webkit-transition: all 0.85s linear;
-  -moz-transition: all 0.85s linear;
-  -o-transition: all 0.85s linear;
-  transition: all 0.85s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 .feed form button.submit:hover {
   border: 1px solid #ff6633;

@@ -14,7 +14,7 @@ var navigationservice = angular.module('navigationservice', [])
             subnav: []
     },
         {
-            name: "MEDIA",
+            name: "Media",
             active: "active",
             link: "#/media",
             classis: "",
@@ -29,14 +29,14 @@ var navigationservice = angular.module('navigationservice', [])
 //            subnav: []
 //    },
         {
-            name: "CONTACT",
+            name: "Contact",
             active: "active",
             link: "#/contact",
             classis: "",
             subnav: []
     },
         {
-            name: "FEEDBACK",
+            name: "Feedback",
             active: "active",
             link: "#/feedback",
             classis: "",
