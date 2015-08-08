@@ -243,7 +243,6 @@ ul li a:hover {
 }
 .feed {
   padding: 4%;
-  margin-left: 12%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: cover;
   margin-bottom: 20px;
@@ -261,6 +260,7 @@ ul li a:hover {
   font-weight: 700;
   transform: translate(-50%, -10%);
   word-spacing: 3px;
+  text-transform: uppercase;
 }
 .feed .formdata {
   padding-left: 6%;
@@ -270,9 +270,13 @@ ul li a:hover {
   font-weight: normal;
   font-size: 16px;
   text-align: left !important;
+  text-transform: capitalize;
 }
 .feed form label span {
   color: #ff6633;
+}
+.feed form label[for="code"] {
+  text-transform: none;
 }
 .feed form input {
   width: 100%;
@@ -287,7 +291,7 @@ ul li a:hover {
   box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
-  width: 148px;
+  width: 181px;
   border-radius: 2px;
   background-color: #ff6633;
   color: #fff;
@@ -307,21 +311,14 @@ ul li a:hover {
 .feed form .lastgroup label {
   word-spacing: 3px;
 }
-.feed form .lastgroup .input1 {
-  padding-right: 6px;
-}
-.feed form .lastgroup label[for="code"] {
-  padding-right: 0;
-  width: 180px;
-}
-.feed form .lastgroup input[id="code"] {
-  width: 148px;
-}
-.feed form .lastgroup .code2 {
-  margin-left: 10px;
-}
 .feed form .last-button {
-  padding-right: 12px;
+  padding-left: 3px;
+}
+.input1 {
+  padding-right: 0;
+}
+.input2 {
+  padding-left: 3px;
 }
 .flexs {
   margin-top: -40px;
