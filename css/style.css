@@ -98,7 +98,7 @@ body .overflowhiddendiv {
   font-weight: 600;
 }
 .product-list {
-  min-height: 552px;
+  min-height: 540px;
   background-color: #D2AE6D;
 }
 .product-list h2 {
@@ -121,6 +121,7 @@ body .overflowhiddendiv {
 }
 .product-list ul li a {
   color: #000;
+  text-decoration: none;
   -webkit-transition: all 310ms ease;
   -moz-transition: all 310ms ease;
   -o-transition: all 310ms ease;
@@ -128,6 +129,7 @@ body .overflowhiddendiv {
 }
 .product-list ul li a:hover {
   font-weight: 600;
+  text-decoration: none;
 }
 .active {
   font-weight: 600;
@@ -245,7 +247,7 @@ body .overflowhiddendiv {
 .cont-feed .contact address span {
   font-family: 'Lato';
   display: block;
-  font-size: 15px;
+  font-size: 15.5px;
   font-weight: 300;
   text-transform: capitalize;
 }
@@ -269,7 +271,7 @@ body .overflowhiddendiv {
 }
 .cont-feed .contact .enquiry {
   font-family: 'Lato';
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
 }
 .cont-feed .contact .enquiry a {
@@ -278,6 +280,7 @@ body .overflowhiddendiv {
   -moz-transition: all 300ms ease;
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
+  text-decoration: none;
 }
 .cont-feed .contact .enquiry a:hover {
   text-decoration: underline;
