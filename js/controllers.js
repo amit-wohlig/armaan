@@ -28,6 +28,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
     $scope.hidenav = 'hidenav';
+	
+	$scope.bigmedia = "gGJfbcDNI0A";
+	
+	$scope.toBigImage = function(med){
+		$scope.bigmedia = med.image;
+	}
+	
+	$scope.media = [{
+		name:"first image",
+		image:"gGJfbcDNI0A"
+	},{
+		name:"second image",
+		image:"SipKS7W1Xd8"
+	},{
+		name:"third image",
+		image:"-JKtWOqARa4"
+	}]
 })
 
 .controller('ProductCtrl', function ($scope, TemplateService, NavigationService) {
