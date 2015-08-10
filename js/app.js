@@ -102,3 +102,10 @@ firstapp.directive('youtube', function ($sce) {
         }
     };
 });
+
+
+function changeBodyZoom()
+{
+    console.log("Changing Zoom");
+    $("body").css("zoom",$(window).height()/$("body").height());
+}
