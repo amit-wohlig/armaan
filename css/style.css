@@ -9,12 +9,14 @@ a:hover {
 }
 body {
   background: url('../img/body_bg.jpg');
+  zoom: 0.75;
+  overflow: hidden;
 }
 body .overflowhiddendiv {
   overflow: hidden;
 }
 .align {
-  margin: 4% 0 !important;
+  margin: 3% 0 !important;
 }
 .header {
   background: url('../img/header_texture.jpg');
@@ -180,7 +182,7 @@ body .overflowhiddendiv {
   height: 400px;
   padding-left: 30px;
   color: #373435;
-  font-size: 14px;
+  font-size: 19px;
   font-family: 'Lato';
   font-weight: 300;
   line-height: 180%;
@@ -213,7 +215,7 @@ body .overflowhiddendiv {
   margin: 0;
 }
 .cont-feed {
-  padding: 4%;
+  padding: 5% 4%;
   background: url('../img/feedback_backg.png') no-repeat;
   background-size: 100% 100%;
   margin-bottom: 2%;
@@ -243,6 +245,8 @@ body .overflowhiddendiv {
 .cont-feed .contact address span {
   font-family: 'Lato';
   display: block;
+  font-size: 15px;
+  font-weight: 300;
   text-transform: capitalize;
 }
 .cont-feed .contact address span a {
@@ -254,8 +258,8 @@ body .overflowhiddendiv {
 .cont-feed .contact address span:nth-child(1) {
   margin-bottom: 6%;
   color: #ff6633;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
 }
 .cont-feed .contact address span:nth-child(5) {
   margin-bottom: 3%;
@@ -265,6 +269,8 @@ body .overflowhiddendiv {
 }
 .cont-feed .contact .enquiry {
   font-family: 'Lato';
+  font-size: 15px;
+  font-weight: 300;
 }
 .cont-feed .contact .enquiry a {
   color: #ff6633;
@@ -396,30 +402,32 @@ body .overflowhiddendiv {
 .videos .info-media p {
   position: absolute;
   top: 30%;
-  left: 10.5%;
+  left: 11%;
   color: #ff6633;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
+  word-spacing: 1.5px;
 }
-.main-video {
-  width: 80%;
+.videos .main-video {
+  width: 75%;
   margin: 0 auto;
 }
-.main-video iframe {
+.videos .main-video iframe {
   width: 100%;
-  min-height: 500px;
+  min-height: 350px;
 }
-.main-video .img-container {
+.videos .main-video .img-container {
   margin: 4% 0;
 }
-.main-video .img-container .img-holder > a {
+.videos .main-video .img-container .img-holder > a {
   border: 2px solid transparent;
   display: block;
 }
-.main-video .img-container .img-holder > a:hover {
+.videos .main-video .img-container .img-holder > a:hover {
   border: 2px solid #ff6633;
 }
-.main-video .img-container .img-holder > .active-img {
+.videos .main-video .img-container .img-holder > .active-img {
   border: 2px solid #ff6633;
 }
 .prd-info {
