@@ -37,6 +37,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
     
     $scope.hidenav = 'hidenav';
+    
+        $scope.product = [{
+            image: "img/product/p1.jpg",
+            name:"APP5 Plain Paratha1",
+            peice:"(5 pieces)"
+        },{
+            image: "img/product/p2.jpg",
+            name:"APP5 Plain Paratha2",
+            peice:"(4 pieces)"
+        },{
+            image: "img/product/p3.jpg",
+            name:"APP5 Plain Paratha3",
+            peice:"(3 pieces)"
+        },{
+            image: "img/product/p4.jpg",
+            name:"APP5 Plain Paratha4",
+            peice:"(2 pieces)"
+        },{
+            image: "img/product/p5.jpg",
+            name:"APP5 Plain Paratha5",
+            peice:"(1 pieces)"
+        },{
+            image: "img/product/p6.jpg",
+            name:"APP5 Plain Paratha6",
+            peice:"(0 pieces)"
+        }];
+    
+    
 })
 
 .controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService) {
