@@ -180,9 +180,10 @@ body .overflowhiddendiv {
   height: 400px;
   padding-left: 30px;
   color: #373435;
-  font-size: 13px;
+  font-size: 14px;
   font-family: 'Lato';
-  line-height: 21px;
+  font-weight: 300;
+  line-height: 180%;
   word-spacing: 3px;
 }
 .aboutus .abt p a.armaan_link {
