@@ -38,6 +38,30 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     
     $scope.hidenav = 'hidenav';
     
+           $scope.productlist = [{
+           
+            name:"bread"
+        },{
+           
+            name:"Snacks - Vegetarian"
+        },{
+           
+            name:"Snacks - Non Vegetarian"
+        },{
+           
+            name:"Herbs and Spices"
+        },{
+           
+            name:"Non Vegetarian"
+        },{
+           
+            name:"Fish"
+        },{
+           
+            name:"Pastry"
+        }];
+    
+    
         $scope.product = [{
             image: "img/product/p1.jpg",
             name:"APP5 Plain Paratha1",
