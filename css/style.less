@@ -23,7 +23,7 @@ a:hover {
 //body
 body {
     background: url('../img/body_bg.jpg');
-    zoom: 0.75;
+  min-width: 1000px;
     overflow: hidden;
     .overflowhiddendiv {
         overflow: hidden;
@@ -475,34 +475,14 @@ body {
             .img-holder > a:hover {
                 border: 2px solid @menuselect;
             }
-            .img-holder > .active-img {
-                border: 2px solid @menuselect;
-            }
+//            .img-holder > .active-img {
+//                border: 2px solid @menuselect;
+//            }
         }
     }
 }
 
-//.main-video {
-//    width: 80%;
-//    margin: 0 auto;
-//    iframe {
-//        width: 100%;
-//        min-height: 500px;
-//    }
-//    .img-container {
-//        margin: 4% 0;
-//        .img-holder > a {
-//            border: 2px solid transparent;
-//            display: block;
-//        }
-//        .img-holder > a:hover {
-//            border: 2px solid @menuselect;
-//        }
-//        .img-holder > .active-img {
-//            border: 2px solid @menuselect;
-//        }
-//    }
-//}
+
 //product-info
 .prd-info {
     border: 3px solid #E6E7E8;
@@ -535,5 +515,5 @@ img {
 img.doneLoading {
     opacity: 1;
 }
-
-@import "mobile.less";
+//
+//@import "mobile.less";

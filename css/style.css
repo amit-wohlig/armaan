@@ -9,7 +9,7 @@ a:hover {
 }
 body {
   background: url('../img/body_bg.jpg');
-  zoom: 0.75;
+  min-width: 1000px;
   overflow: hidden;
 }
 body .overflowhiddendiv {
@@ -430,9 +430,6 @@ body .overflowhiddendiv {
 .videos .main-video .img-container .img-holder > a:hover {
   border: 2px solid #ff6633;
 }
-.videos .main-video .img-container .img-holder > .active-img {
-  border: 2px solid #ff6633;
-}
 .prd-info {
   border: 3px solid #E6E7E8;
 }
@@ -462,112 +459,4 @@ img {
 }
 img.doneLoading {
   opacity: 1;
-}
-@media only screen and (min-width: 767px) and (max-width: 991px) {
-  body {
-    zoom: 1;
-    overflow: scroll;
-  }
-  .menus ul li a {
-    padding: 10px 0px;
-    font-size: 14px;
-  }
-  .footers p {
-    font-size: 12px;
-  }
-  .aboutus {
-    height: 423px;
-  }
-  .aboutus .abt-info .abt h2 {
-    font-size: 33px;
-  }
-  .aboutus .abt-info .abt p {
-    height: 300px;
-    font-size: 16px;
-  }
-  .aboutus .dish img {
-    height: 400px;
-    padding-top: 23px;
-  }
-}
-.product-list {
-  min-height: 437px;
-}
-.product-list h2 {
-  font-size: 13px;
-}
-.product-list ul li {
-  padding: 11px;
-}
-.product-list ul li a {
-  padding: 11px 0;
-  font-size: 12px;
-}
-.img-descp h3 {
-  font-size: 12px !important;
-}
-.img-descp span {
-  font-size: 12px !important;
-}
-.videos .info-media p {
-  left: 12%;
-  font-size: 10px;
-}
-.videos .main-video iframe {
-  min-height: 250px;
-}
-.cont-feed .cont-florals img {
-  width: 100%;
-  margin-left: 0;
-  margin-bottom: 5%;
-}
-.cont-feed .cont-florals p {
-  font-size: 12px;
-  top: 25%;
-  left: 49%;
-}
-.cont-feed .contact address {
-  margin-bottom: 6px;
-}
-.cont-feed .contact address span:nth-child(1) {
-  margin-bottom: 3%;
-  font-size: 15px;
-}
-.cont-feed .contact address span:nth-child(5) {
-  margin-bottom: 1%;
-}
-.cont-feed .contact address span {
-  font-size: 13px;
-}
-.cont-feed .contact span.enquiry {
-  font-size: 13px;
-}
-.cont-feed .map {
-  margin-top: 5%;
-}
-.feed .head-floral p {
-  top: 15%;
-  font-size: 10.5px;
-}
-@media only screen and (max-width: 768px) {
-  body {
-    overflow: scroll;
-    zoom: 1;
-  }
-  .aboutus {
-    height: auto;
-  }
-  .aboutus .abt-info .abt h2 {
-    font-size: 28px;
-  }
-  .aboutus .abt-info .abt p {
-    height: 300px;
-    font-size: 13px;
-  }
-  .aboutus .dish img {
-    height: auto;
-    padding-top: 25px;
-    padding-right: 0;
-    margin-left: 0;
-  }
 }
