@@ -122,6 +122,7 @@ body .overflowhiddendiv {
 }
 .product-list ul li a {
   color: #000;
+  font-size: 14px;
   text-decoration: none;
   -webkit-transition: all 310ms ease;
   -moz-transition: all 310ms ease;
