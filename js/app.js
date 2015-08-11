@@ -6,17 +6,17 @@ var firstapp = angular.module('firstapp', [
     'navigationservice'
 ]);
 
-firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider,$httpProvider) {
-    
+firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvider, $httpProvider) {
+
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
-    
+
     //Turn the spinner on or off
     cfpLoadingBarProvider.includeSpinner = false;
 
     $stateProvider
 
-    .state('aboutus', {
+        .state('aboutus', {
         url: "/aboutus",
         templateUrl: "views/template.html",
         controller: 'AboutusCtrl'
@@ -33,28 +33,28 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
         templateUrl: "views/template.html",
         controller: 'ContactCtrl'
     })
-    
+
     .state('feedback', {
         url: "/feedback",
         templateUrl: "views/template.html",
         controller: 'FeedbackCtrl'
     })
-    
+
     .state('media', {
-        url: "/media",
-        templateUrl: "views/template.html",
-        controller: 'MediaCtrl'
-    }) 
+            url: "/media",
+            templateUrl: "views/template.html",
+            controller: 'MediaCtrl'
+        })
         .state('product', {
-        url: "/product",
-        templateUrl: "views/template.html",
-        controller: 'ProductCtrl'
-    })  
+            url: "/product",
+            templateUrl: "views/template.html",
+            controller: 'ProductCtrl'
+        })
         .state('productinfo', {
-        url: "/product-info",
-        templateUrl: "views/template.html",
-        controller: 'ProductinfoCtrl'
-    })
+            url: "/product-info",
+            templateUrl: "views/template.html",
+            controller: 'ProductinfoCtrl'
+        })
 
     $urlRouterProvider.otherwise("/aboutus");
 
@@ -67,24 +67,21 @@ firstapp.directive('img', function($compile, $parse) {
         replace: false,
         link: function($scope, element, attrs) {
             var $element = $(element);
-            if(!attrs.noloading)
-            {
+            if (!attrs.noloading) {
                 $element.after("<img src='img/loading.gif' class='loading' />");
                 var $loading = $element.next(".loading");
                 $element.load(function() {
                     $loading.remove();
                     $(this).addClass("doneLoading");
                 });
-            }
-            else
-            {
+            } else {
                 $($element).addClass("doneLoading");
             }
         }
     };
 });
 
-firstapp.directive('youtube', function ($sce) {
+firstapp.directive('youtube', function($sce) {
     return {
         restrict: 'A',
         scope: {
@@ -92,9 +89,9 @@ firstapp.directive('youtube', function ($sce) {
         },
         replace: true,
         template: '<iframe style="overflow:hidden;height:100%;width:100%" width="100%" height="100%" src="{{url}}" frameborder="0" allowfullscreen></iframe>',
-        link: function (scope) {
+        link: function(scope) {
             console.log(scope.code);
-            scope.$watch('code', function (newVal) {
+            scope.$watch('code', function(newVal) {
                 if (newVal) {
                     scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
                 }
@@ -104,8 +101,11 @@ firstapp.directive('youtube', function ($sce) {
 });
 
 
-function changeBodyZoom()
-{
+function changeBodyZoom() {
     console.log("Changing Zoom");
-    $("body").css("zoom",$(window).height()/$("body").height());
+    var ratio = $(window).height() / $("body").height();
+    console.log(ratio);
+    if (ratio > 0.5 && ratio < 1) {
+        $("body").css("zoom", ratio);
+    }
 }
