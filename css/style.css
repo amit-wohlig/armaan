@@ -40,6 +40,7 @@ body .overflowhiddendiv {
   padding-right: 8%;
 }
 .menus div ul li a {
+  padding: 10px 0;
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
@@ -233,10 +234,10 @@ body .overflowhiddendiv {
 }
 .cont-feed .cont-florals p {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 49%;
   color: #ff6633;
-  font-size: 14px;
+  font-size: 13px;
   transform: translate(-50%, -10%);
   font-weight: 700;
   word-break: 3px;
@@ -297,10 +298,10 @@ body .overflowhiddendiv {
 }
 .feed .head-floral p {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 50%;
   color: #ff6633;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 700;
   transform: translate(-50%, -10%);
   word-spacing: 3px;
@@ -312,7 +313,7 @@ body .overflowhiddendiv {
 .feed form label {
   font-family: 'Lato';
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left !important;
   text-transform: capitalize;
 }
@@ -320,6 +321,7 @@ body .overflowhiddendiv {
   color: #ff6633;
 }
 .feed form label[for="code"] {
+  padding-right: 0;
   text-transform: none;
 }
 .feed form input {
@@ -335,10 +337,12 @@ body .overflowhiddendiv {
   box-shadow: 0 0 0 #ff6633;
 }
 .feed form button.submit {
-  width: 177px;
+  width: 143px;
+  padding: 6px;
   border: 1px solid #ff6633;
   border-radius: 2px;
   background-color: #ff6633;
+  font-size: 12px;
   color: #fff;
   font-family: 'Lato';
   -webkit-transition: all 0.5s linear;
@@ -353,12 +357,6 @@ body .overflowhiddendiv {
 }
 .feed form button.submit:focus {
   outline: none;
-}
-.feed form .lastgroup {
-  margin-bottom: 5px;
-}
-.feed form .lastgroup label {
-  word-spacing: 3px;
 }
 .feed form .last-button {
   padding-left: 3px;
@@ -405,9 +403,9 @@ body .overflowhiddendiv {
 .videos .info-media p {
   position: absolute;
   top: 30%;
-  left: 11%;
+  left: 12%;
   color: #ff6633;
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
   word-spacing: 1.5px;

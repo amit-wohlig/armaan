@@ -59,6 +59,7 @@ body {
         ul {
             li {
                 a {
+                    padding: 10px 0;
                     font-weight: 600;
                     text-transform: uppercase;
                     color: #fff;
@@ -256,10 +257,10 @@ body {
         }
         p {
             position: absolute;
-            top: 10%;
+            top: 20%;
             left: 49%;
             color: @menuselect;
-            font-size: 14px;
+            font-size: 13px;
             transform: translate(-50%, -10%);
             font-weight: 700;
             word-break: 3px;
@@ -321,10 +322,10 @@ body {
         position: relative;
         p {
             position: absolute;
-            top: 10%;
+            top: 20%;
             left: 50%;
             color: @menuselect;
-            font-size: 14px;
+            font-size: 11px;
             font-weight: 700;
             transform: translate(-50%, -10%);
             word-spacing: 3px;
@@ -338,7 +339,7 @@ body {
         label {
             font-family: @fontdata;
             font-weight: normal;
-            font-size: 16px;
+            font-size: 15px;
             text-align: left !important;
             text-transform: capitalize;
             span {
@@ -346,6 +347,7 @@ body {
             }
         }
         label[for="code"] {
+            padding-right: 0;
             text-transform: none;
         }
         input {
@@ -361,10 +363,12 @@ body {
             box-shadow: 0 0 0 @menuselect;
         }
         button.submit {
-            width: 177px;
+            width: 143px;
+            padding: 6px;
             border: 1px solid @menuselect;
             border-radius: 2px;
             background-color: @menuselect;
+            font-size: 12px;
             color: #fff;
             font-family: @fontdata;
             .transition( all 0.50s linear);
@@ -377,12 +381,7 @@ body {
         button.submit:focus {
             outline: none;
         }
-        .lastgroup {
-            margin-bottom: 5px;
-            label {
-                word-spacing: 3px;
-            }
-        }
+        
         .last-button {
             padding-left: 3px;
         }
@@ -451,9 +450,9 @@ body {
         p {
             position: absolute;
             top: 30%;
-            left: 11%;
+            left: 12%;
             color: @menuselect;
-            font-size: 13px;
+            font-size: 11px;
             font-weight: 600;
             text-transform: uppercase;
             word-spacing: 1.5px;
