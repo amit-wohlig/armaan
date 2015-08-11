@@ -7,7 +7,7 @@
                         <div class="product-list">
                             <h2>product range</h2>
                             <ul class="list" >
-                            <li ng-repeat="prol in productlist"><a href="productinfo.html" title="{{prol.name}}" class="">{{prol.name}}</a></li>
+                            <li ng-repeat="prol in productlist"><a href="productinfo.html" title="{{prol.name}}" ng-click="getmultipleproducts(prol.id)" class="">{{prol.name}}</a></li>
 <!--
                                 <li><a href="productinfo.html" title="Bread" class="active">Bread</a></li>
                                 <li><a href="#" title="Snacks - Vegetarian">Snacks - Vegetarian</a></li>
@@ -25,12 +25,12 @@
                             <div class="col-xs-4" ng-repeat="pro in product">
                                 <div class="product-info">
                                     <div class="img-holder">
-                                        <a href="#/product-info"><img ng-src="{{pro.image}}" alt="paratha" /></a>
+                                        <span ng-click="getsingleproductdetail(pro.id)"><img ng-src="{{pro.image|serverimage}}" alt="paratha" /></span>
                                     </div>
                                     <div class="img-descp">
                                         <a href="#/product-info">
                                             <h3>{{pro.name}}</h3>
-                                            <span>{{pro.peice}}</span>
+                                            (<span>{{pro.pieces}}</span> pieces)
                                         </a>
                                     </div>
                                 </div>

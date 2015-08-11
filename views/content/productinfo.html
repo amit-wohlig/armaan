@@ -22,16 +22,16 @@
                                 <div class="col-md-7">
                                     <div class="product-info">
                                         <div class="img-holder">
-                                            <img src="img/product.jpg" alt="paratha" class="img-responsive prd-info" />
+                                            <img ng-src="{{singleproductdetail.image|serverimage}}" alt="paratha" class="img-responsive prd-info" />
                                         </div>
                                         <div class="img-descp">
-                                            <h3>APP5 Plain Paratha</h3>
-                                            <span>(5 pieces)</span>
+                                            <h3>{{singleproductdetail.name}}</h3>
+                                            <span>({{singleproductdetail.pieces}} pieces)</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-5">
-                                    <p class="text-center prd-info-descp">Our irresistible Original Paratha is a soft dough based bread used as a compliment to South Asian dishes, this popular product tastes great as a morning snack or as an afternoon bite. Using only the best ingredients our Paratha is Trans Fat Free and contains No Artificial preservatives or flavours.</p>
+                                    <p class="text-center prd-info-descp">{{singleproductdetail.description}}</p>
                                 </div>
                             </div>
                         </div>

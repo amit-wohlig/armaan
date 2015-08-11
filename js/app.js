@@ -1,5 +1,6 @@
 // JavaScript Document
 var firstapp = angular.module('firstapp', [
+    'ngRoute',
     'ui.router',
     'phonecatControllers',
     'templateservicemod',
@@ -51,7 +52,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
         controller: 'ProductCtrl'
     })  
         .state('productinfo', {
-        url: "/product-info",
+        url: "/product-info/:id",
         templateUrl: "views/template.html",
         controller: 'ProductinfoCtrl'
     })
@@ -103,7 +104,23 @@ firstapp.directive('youtube', function ($sce) {
     };
 });
 
-
+firstapp.filter('serverimage', function() {
+    return function(image) {
+        return imgpath + image;
+    };
+});
+var formvalidation = function (allvalidation) {
+    var isvalid2 = true;
+    for (var i = 0; i < allvalidation.length; i++) {
+//        console.log("checking");
+//        console.log(allvalidation[i].field);
+        if (allvalidation[i].field == "" || !allvalidation[i].field || allvalidation[i].field == "Please select" || allvalidation[i].field == "Please Select") {
+            allvalidation[i].validation = "ng-dirty";
+            isvalid2 = false;
+        }
+    }
+    return isvalid2;
+};
 function changeBodyZoom()
 {
     console.log("Changing Zoom");

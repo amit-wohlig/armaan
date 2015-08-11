@@ -48,7 +48,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
  }]
 })
 
-.controller('ProductCtrl', function ($scope, TemplateService, NavigationService) {
+.controller('ProductCtrl', function ($scope, TemplateService, NavigationService,$location) {
     $scope.template = TemplateService.changecontent("product");
     $scope.menutitle = NavigationService.makeactive("Products");
     TemplateService.title = $scope.menutitle;
@@ -56,72 +56,98 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.hidenav = 'hidenav';
 
-    $scope.productlist = [{
+    $scope.getmultipleproducts = function (id) {
+        NavigationService.viewprojectbyprojecttype(id, viewprojectbyprojecttypesuccess);
+    }
 
-        name: "bread"
-        }, {
-
-        name: "Snacks - Vegetarian"
-        }, {
-
-        name: "Snacks - Non Vegetarian"
-        }, {
-
-        name: "Herbs and Spices"
-        }, {
-
-        name: "Non Vegetarian"
-        }, {
-
-        name: "Fish"
-        }, {
-
-        name: "Pastry"
-        }];
+    // GET PRODUCTS SIDE MENU
+    $scope.productlist = {};
+    console.log($scope.productlist);
+    var getproducttypesuccess = function (data, status) {
+        $scope.productlist = data;
+        console.log(data);
+        $scope.getmultipleproducts(data[0].id);
+    }
+    NavigationService.getproducttype().success(getproducttypesuccess);
 
 
-    $scope.product = [{
-        image: "img/product/p1.jpg",
-        name: "APP5 Plain Paratha1",
-        peice: "(5 pieces)"
-        }, {
-        image: "img/product/p2.jpg",
-        name: "APP5 Plain Paratha2",
-        peice: "(4 pieces)"
-        }, {
-        image: "img/product/p3.jpg",
-        name: "APP5 Plain Paratha3",
-        peice: "(3 pieces)"
-        }, {
-        image: "img/product/p4.jpg",
-        name: "APP5 Plain Paratha4",
-        peice: "(2 pieces)"
-        }, {
-        image: "img/product/p5.jpg",
-        name: "APP5 Plain Paratha5",
-        peice: "(1 pieces)"
-        }, {
-        image: "img/product/p6.jpg",
-        name: "APP5 Plain Paratha6",
-        peice: "(0 pieces)"
-        }];
+    // GET MULTIPLE PRODUCTS
+    var viewprojectbyprojecttypesuccess = function (data, status) {
+        $scope.product = data.queryresult;
+        console.log($scope.product);
+    }
+
+    $scope.getsingleproductdetail=function(id){
+      $location.url("/product-info/"+id);
+    }
 
 
 })
-
-.controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService) {
-        $scope.template = TemplateService.changecontent("feedback");
-        $scope.menutitle = NavigationService.makeactive("Feedback");
-        TemplateService.title = $scope.menutitle;
-        $scope.navigation = NavigationService.getnav();
-    })
-    .controller('ProductinfoCtrl', function ($scope, TemplateService, NavigationService) {
+ .controller('ProductinfoCtrl', function ($scope, TemplateService, NavigationService,$routeParams,$stateParams) {
         $scope.template = TemplateService.changecontent("productinfo");
         $scope.menutitle = NavigationService.makeactive("productinfo");
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
         $scope.hidenav = 'hidenav';
+         console.log($stateParams.id);
+    // get single product detail
+    var getsingleproductdetailsuccess=function(data,status){
+    $scope.singleproductdetail=data;
+        console.log($scope.singleproductdetail);
+    }
+     NavigationService.getsingleproductdetail($stateParams.id, getsingleproductdetailsuccess);
+
     })
+.controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService) {
+        $scope.template = TemplateService.changecontent("feedback");
+        $scope.menutitle = NavigationService.makeactive("Feedback");
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+         $scope.feedback = [];
+    var getfeedbackdetailscallback=function(data,status){
+        if(data=="")
+        {
+        console.log("error");
+        }
+        else{
+    console.log("success"+data);
+        $scope.feedback={};
+        }
+    }
+    $scope.getfeedbackdetails = function (feedback) {
+
+        $scope.allvalidation = [{
+            field: $scope.feedback.name,
+            validation: ""
+        }, {
+            field: $scope.feedback.email,
+            validation: ""
+        }, {
+            field: $scope.feedback.feedback,
+            validation: ""
+   }];
+        var check = formvalidation($scope.allvalidation);
+        //        if (navigator.network.connection.type == Connection.none) {
+        //            var myPopup = $ionicPopup.show({
+        //                title: 'No Internet Connection',
+        //                scope: $scope,
+        //            });
+        //            $timeout(function () {
+        //                myPopup.close(); //close the popup after 3 seconds for some reason
+        //            }, 1500);
+        //        } else {
+        if (check) {
+            $scope.feedback = feedback;
+            console.log($scope.feedback);
+            NavigationService.addfeedback($scope.feedback).success(getfeedbackdetailscallback);
+
+        }
+        else{
+        console.log("Invalid");
+        }
+    }
+    })
+   
 
 .controller('headerctrl', function ($scope, TemplateService, $rootScope, $timeout) {
     $scope.template = TemplateService;
