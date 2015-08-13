@@ -133,9 +133,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         var getfeedbackdetailscallback = function (data, status) {
             if (data == "This is a spam") {
                 console.log("The captcha is missing or wrong!");
-//                ngDialog.open({
-//                    template: 'views/content/feedpopup.html'
-//                });
+                ngDialog.open({
+                    template: 'views/content/captchapopup.html'
+                });
             } else {
                 console.log("success" + data);
                 ngDialog.open({
