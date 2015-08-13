@@ -124,7 +124,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         }
         NavigationService.getproducttype().success(getproducttypesuccess);
     })
-    .controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService, vcRecaptchaService) {
+    .controller('FeedbackCtrl', function ($scope, TemplateService, NavigationService, vcRecaptchaService, ngDialog) {
         $scope.template = TemplateService.changecontent("feedback");
         $scope.menutitle = NavigationService.makeactive("Feedback");
         TemplateService.title = $scope.menutitle;
@@ -133,13 +133,18 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         var getfeedbackdetailscallback = function (data, status) {
             if (data == "This is a spam") {
                 console.log("The captcha is missing or wrong!");
+//                ngDialog.open({
+//                    template: 'views/content/feedpopup.html'
+//                });
             } else {
                 console.log("success" + data);
+                ngDialog.open({
+                  template: 'views/content/feedpopup.html'
+                });
                 $scope.feedback = {};
             }
         }
         $scope.getfeedbackdetails = function (feedback) {
-
             $scope.allvalidation = [{
                 field: $scope.feedback.name,
                 validation: ""
@@ -163,8 +168,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             if (check) {
                 $scope.feedback = feedback;
                 console.log($scope.feedback);
-//                NavigationService.addfeedback($scope.feedback).success(getfeedbackdetailscallback);
-                NavigationService.addfeedback($scope.feedback,getfeedbackdetailscallback);
+                //                NavigationService.addfeedback($scope.feedback).success(getfeedbackdetailscallback);
+                NavigationService.addfeedback($scope.feedback, getfeedbackdetailscallback);
 
             } else {
                 console.log("Invalid");
