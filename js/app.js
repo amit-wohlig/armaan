@@ -1,6 +1,5 @@
 // JavaScript Document
 var firstapp = angular.module('firstapp', [
-    'ngRoute',
     'ui.router',
     'phonecatControllers',
     'templateservicemod',
@@ -47,7 +46,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, cfpLoadingBarProvid
         controller: 'MediaCtrl'
     }) 
         .state('product', {
-        url: "/product",
+        url: "/product/:id",
         templateUrl: "views/template.html",
         controller: 'ProductCtrl'
     })  

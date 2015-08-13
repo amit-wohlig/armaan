@@ -31,7 +31,7 @@
                                 <div class="form-group">
                                     <label for="phone" class="col-xs-2 control-label">phone</label>
                                     <div class="col-xs-10">
-                                        <input type="number" class="form-control" ng-model=feedback.phone id="phone">
+                                        <input type="tel" class="form-control" ng-model=feedback.phone id="phone">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -61,22 +61,32 @@
                                 <div class="form-group">
                                     <label for="postcode" class="col-xs-2 control-label">postcode</label>
                                     <div class="col-xs-10">
-                                        <input type="number" class="form-control" ng-model=feedback.postcode id="postcode">
+                                        <input type="text" class="form-control" ng-model=feedback.postcode id="postcode">
                                     </div>
                                 </div>
+                                <div class="form-group lastgroup">
+                                    <script src="//www.google.com/recaptcha/api.js"></script>
+                                    <div class="g-recaptcha" ng-class="allvalidation[3].validation" data-sitekey="6Lc3HAsTAAAAAN6OuXJWxINPl7ZFdTuFCsGCSWvH"> </div>
+                                </div>
+
+                                <!--
                                 <div class="form-group lastgroup">
                                     <label for="code" class="col-xs-4 control-label">Enter the code shown </label>
                                     <div class="col-xs-8">
                                         <div class="row">
+                                            
                                             <div class="col-xs-6 input1">
                                                 <input type="text" id="code" class="form-control">
                                             </div>
                                             <div class="col-xs-6 input2">
                                                 <input type="text" id="code" class="form-control">
                                             </div>
+
+                                            <div vc-recaptcha theme="light" key="'6Lc3HAsTAAAAAN6OuXJWxINPl7ZFdTuFCsGCSWvH'" class="zoomcaptcha"></div>
                                         </div>
                                     </div>
                                 </div>
+-->
                                 <div class="form-group ">
                                     <div class="col-xs-offset-8 col-xs-4 last-button">
                                         <button type="submit" class="btn btn-default submit" ng-click=getfeedbackdetails(feedback)>SUBMIT</button>
