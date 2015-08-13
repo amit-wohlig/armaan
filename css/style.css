@@ -9,6 +9,7 @@ a:hover {
 }
 body {
   background: url('../img/body_bg.jpg');
+  background-size: cover;
   min-width: 1000px;
   overflow: hidden;
 }
@@ -360,7 +361,11 @@ body .overflowhiddendiv {
   outline: none;
 }
 .feed form .last-button {
+  margin-top: 8%;
   padding-left: 3px;
+}
+.rc-anchor-light {
+  margin-let: 19% !important;
 }
 .input1 {
   padding-right: 0;
@@ -462,4 +467,16 @@ img.doneLoading {
 .container {
   max-width: none !important;
   width: 970px;
+}
+.g-recaptcha iframe {
+  width: 500px;
+  height: 150px;
+}
+.popup-info {
+  background-color: #fff;
+  min-height: 300px;
+}
+.popup-info p {
+  padding: 5% 10%;
+  font-size: 25px;
 }
