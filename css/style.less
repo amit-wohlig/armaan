@@ -530,13 +530,60 @@ img.doneLoading {
 }
 
 .popup-info {
- background-color: #fff;
+    background-color: #fff;
     min-height: 300px;
-    
     p {
         padding: 5% 10%;
-font-size: 25px;
+        font-size: 25px;
+    }
+    #rc-imageselect {
+        min-height: 600px;
+        min-width: 240px;
+        font-family: Roboto, helvetica, arial, san-serif;
+        zoom: 0.5 !important;
+    }
 }
+
+.ngdialog-overlay {
+    display: none;
+}
+
+.ngdialog-content {
+    background-color: transparent;
+}
+
+.popup-holder {
+    position: relative;
+    .popup-info-captcha {
+        background-color: #fff ! important;
+        text-align: center;
+        padding: 1% 0;
+        position: absolute;
+        width: 100%;
+        top: 137px;
+    }
+    p {
+        font-size: 19px;
+    }
+}
+
+.pop-up-hold {
+    position: relative;
+    .popup-info {
+        background-color: #fff;
+        min-height: 0;
+        position: absolute;
+        top: 150px;
+        left: 47px;
+        padding: 3% 0;
+    }
+    button.close {
+        font-size: 35px;
+    }
+    p{
+        padding: 5% 10%;
+        font-size: 22px;
+    }
 }
 
 //
