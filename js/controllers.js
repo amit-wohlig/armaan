@@ -10,7 +10,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     'img/slider/slider1.jpg',
     'img/slider/slider2.jpg',
     'img/slider/slider3.jpg',
-    'img/slider/slider4.jpg'
+    'img/slider/slider4.jpg',
+    'img/slider/slider5.jpg'
    ];
 
 })
