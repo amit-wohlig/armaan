@@ -120,8 +120,3 @@ var formvalidation = function (allvalidation) {
     }
     return isvalid2;
 };
-function changeBodyZoom()
-{
-    console.log("Changing Zoom");
-    $("body").css("zoom",$(window).height()/$("body").height());
-}

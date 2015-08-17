@@ -6,6 +6,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("About Us");
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    $scope.slidesabout = [
+    'img/slider/slider1.jpg',
+    'img/slider/slider2.jpg',
+    'img/slider/slider3.jpg',
+    'img/slider/slider4.jpg',
+    'img/slider/slider5.jpg'
+   ];
 
 })
 
@@ -133,13 +140,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         var getfeedbackdetailscallback = function (data, status) {
             if (data == "This is a spam") {
                 console.log("The captcha is missing or wrong!");
-                ngDialog.open({
-                    template: 'views/content/captchapopup.html'
-                });
+                //                ngDialog.open({
+                //                    template: 'views/content/captchapopup.html'
+                //                });
             } else {
                 console.log("success" + data);
                 ngDialog.open({
-                  template: 'views/content/feedpopup.html'
+                    template: 'views/content/feedpopup.html'
                 });
                 $scope.feedback = {};
             }

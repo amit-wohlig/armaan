@@ -25,13 +25,13 @@ var navigationservice = angular.module('navigationservice', [])
             subnav: []
             }
     ,
-//        {
-//            name: "AVAILABLE AT",
-//            active: "active",
-//            link: "#",
-//            classis: "",
-//            subnav: []
-//    },
+        {
+            name: "Available at",
+            active: "active",
+            link: "#/availableat",
+            classis: "",
+            subnav: []
+    },
         {
             name: "Contact",
             active: "active",
